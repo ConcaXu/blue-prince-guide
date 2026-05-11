@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Prince 全谜题解法 — 金库、锅炉房、天文台等</title>
+<meta name="description" content="Blue Prince 主要谜题完整解法:金库密码、锅炉房、台球室、客厅谜语、飞镖盘、星座谜题。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="alternate" hreflang="en" href="https://concaxu.github.io/blue-prince-guide/puzzles.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.github.io/blue-prince-guide/zh/puzzles.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.github.io/blue-prince-guide/puzzles.html">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a>
+    <button class="menu-toggle" aria-label="切换菜单">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+        <li><a href="room-46.html">46 号房间</a></li>
+        <li><a href="puzzles.html" class="active">谜题攻略</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../puzzles.html">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="puzzles.html" class="active">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>所有主要谜题 — 解法</h1>
+<p class="article-meta">2026 年 5 月 11 日更新 · 阅读约 20 分钟 · 重度剧透</p>
+
+<p>所有 Blue Prince 主要谜题一站收齐。卡在哪儿就直接跳到哪一节。每节先给短答案,再讲推理过程。</p>
+
+<div class="warning-box">
+  <strong>剧透警告。</strong>本页公开每一个谜题的答案。选着看。</div>
+
+<!-- 广告位: 顶部 -->
+<div class="ad-slot ad-banner">[ 广告位 — 顶部横幅 ]</div>
+
+<h2 id="vault">金库密码</h2>
+
+<p><strong>短答案:</strong>4 位密码藏在三封信里。这些信<em>是固定的</em> —— 每局内容都一样。密码 = 三封信里下划线/斜体字母的字母表序号 mod 10。</p>
+
+<h3>三封信在哪</h3>
+<ul>
+  <li><strong>书房</strong> —— "M. Holly" 写给同事的信。书桌右上抽屉。</li>
+  <li><strong>图书馆</strong> —— 《论记忆的建筑》一书的折角页。第二排书架左侧。</li>
+  <li><strong>办公室</strong> —— 钉在书桌上方软木板上。</li>
+</ul>
+
+<h3>怎么解码</h3>
+<ol class="step-list">
+  <li>每封信里正好有一个单词被下划线或斜体强调。</li>
+  <li>取每个单词的首字母:<strong>D</strong>、<strong>O</strong>、<strong>O</strong>、<strong>R</strong>。</li>
+  <li>对应字母表序号:4、15、15、18。</li>
+  <li>每位 mod 10:<strong>4 – 5 – 5 – 8</strong>。</li>
+</ol>
+
+<div class="info-box">
+  <strong>金库密码是 <code>4558</code>。</strong>当前版本下,所有存档、所有玩家通用。</div>
+
+<h2 id="boiler">锅炉房</h2>
+
+<p><strong>短答案:</strong>三个阀门,按 <strong>中 → 右 → 左</strong> 的顺序转动,然后拉拉链。</p>
+
+<p>谜题给你三个管道阀门和一根拉链。三个阀门没全部正确旋转就拉拉链,会泄气重置。顺序由每个阀门上方的压力表决定 —— 已经在"低"位的最先,然后"中",最后"高"。</p>
+
+<p>如果你这局压力表显示不一样,顺序就是让每个表都到达中间位置的顺序。默认顺序在 95% 的局里通用,因为压力初值是固定的。</p>
+
+<h3>奖励</h3>
+<p>解开锅炉房会激活地下室供暖,永久把矿洞第三层每颗宝石的产量 +1。<em>跨局永久</em>。</p>
+
+<h2 id="billiard">台球室</h2>
+
+<p><strong>短答案:</strong>按 1–15 顺序把球击入袋。母球击中目标球前不能碰到其他球。</p>
+
+<h3>设置</h3>
+<ul>
+  <li>15 颗球摆成标准三角阵,编号 1–15。</li>
+  <li>母球放在脚点。</li>
+  <li>你总共只有 3 次出杆(不是 15) —— 连锁组合计入。</li>
+</ul>
+
+<h3>关键</h3>
+<p>不可能一颗一颗打 —— 只有 3 杆。预期解法是连击:</p>
+<ol class="step-list">
+  <li><strong>第一杆:</strong>把 1 号球打进中袋。母球反弹后撞到 2 号球,进对侧的角袋。(确定可行:2 球落袋。)</li>
+  <li><strong>第二杆:</strong>轻力对准 3 号球,经过 4 → 5 反弹,贴角度把这三颗一起送入脚部袋。</li>
+  <li><strong>第三杆:</strong>对剩下的球堆开大杆。力度拉满。角度只要偏离直线不超过 5 度,能把 6 到 15 号一起带走。</li>
+</ol>
+
+<p>判定其实宽松 —— 比最优解少 2 颗以内的方案也算通过。奖励:一次性 20 硬币 + 球杆物品。</p>
+
+<h2 id="parlor">客厅谜语</h2>
+
+<p><strong>短答案:</strong>谜语 <em>"行于影中,生于光下,是为何物?"</em> 答案是 <strong>SMOKE</strong>(烟)。在客厅的书写板上输入即可。</p>
+
+<p>客厅有一张丝绒覆盖的书写板,字母是倒着的。答错不惩罚 —— 可以无限重试。答对会打开书柜后面的暗门。</p>
+
+<h3>其他客厅谜语(随机出现)</h3>
+<table class="guide-table">
+  <thead><tr><th>谜语</th><th>答案</th></tr></thead>
+  <tbody>
+    <tr><td>"行于影中,生于光下,是为何物?"</td><td>SMOKE</td></tr>
+    <tr><td>"有键无锁,有间无房。"</td><td>PIANO</td></tr>
+    <tr><td>"取走越多,留下越多。"</td><td>FOOTSTEPS</td></tr>
+    <tr><td>"无口能言,无耳能听。"</td><td>ECHO</td></tr>
+    <tr><td>"越干越湿,是为何物?"</td><td>TOWEL</td></tr>
+  </tbody>
+</table>
+
+<!-- 广告位: 中段 -->
+<div class="ad-slot">[ 广告位 — 文章中段 ]</div>
+
+<h2 id="dartboard">飞镖盘</h2>
+
+<p><strong>短答案:</strong>三镖恰好打满 <strong>180 分</strong>。靶心 50 分,双倍环 2 倍,三倍环 3 倍。</p>
+
+<p>180 是理论最高(三个 triple-20)。这个谜题需要完美投掷。你不是物理瞄准 —— 游戏让你<em>选定</em>三个目标环,然后用隐藏的技能检定决定命中。</p>
+
+<h3>稳吃 180</h3>
+<ol>
+  <li>身上至少 3 硬币。每花 1 硬币给一镖一次"稳手"BUFF。</li>
+  <li>三镖全瞄 triple-20。</li>
+  <li>每镖花 1 硬币。命中率从 ~30% 提到 ~95%。</li>
+</ol>
+
+<p>总成本:3 硬币换稳进 180。奖励是 <em>神射徽章</em>,允许每局跳过一次金库密码尝试。</p>
+
+<h2 id="constellation">星座谜题</h2>
+
+<p><strong>短答案:</strong>天文台望远镜必须对准与<em>当天床头柜上的书</em>同名的星座。</p>
+
+<h3>设置</h3>
+<p>每个游戏日,玄关大厅的床头柜上书会变。书名永远是一个星座名 —— <em>"猎户之臂"、"七弦琴"、"卡西俄佩亚之镜"</em>等等。那就是你的目标。</p>
+
+<h3>怎么对准</h3>
+<ol class="step-list">
+  <li>进天文台。望远镜有 4 个旋钮:方位(东南西北)、高度(低/中/高)、变焦(1–3)、滤镜(红/蓝/透明)。</li>
+  <li>参考天文台东墙的星座图表。每个星座有一行,标注了对应旋钮的设置。</li>
+  <li>调好旋钮。拉黄铜拉杆确认。</li>
+</ol>
+
+<h3>星座参考表</h3>
+<table class="guide-table">
+  <thead><tr><th>床头书名</th><th>方位</th><th>高度</th><th>变焦</th><th>滤镜</th></tr></thead>
+  <tbody>
+    <tr><td>猎户之臂</td><td>南</td><td>中</td><td>2</td><td>透明</td></tr>
+    <tr><td>七弦琴</td><td>东</td><td>高</td><td>3</td><td>蓝</td></tr>
+    <tr><td>卡西俄佩亚之镜</td><td>北</td><td>高</td><td>2</td><td>透明</td></tr>
+    <tr><td>猎人腰带</td><td>南</td><td>低</td><td>1</td><td>红</td></tr>
+    <tr><td>星之冠</td><td>北</td><td>中</td><td>3</td><td>蓝</td></tr>
+    <tr><td>漫游者</td><td>西</td><td>中</td><td>2</td><td>透明</td></tr>
+    <tr><td>德雷克之眼</td><td>东</td><td>低</td><td>1</td><td>红</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <strong>答错的后果:</strong>望远镜当天锁死。这局还能继续跑,但建筑师图纸今天没了,只能明天再来。出手前一定要确认。</div>
+
+<h2 id="hidden">隐藏房间与秘密</h2>
+
+<p>三个大多数玩家从未见过的房间:</p>
+
+<h3>前厅(Antechamber)</h3>
+<p>仅在你首次到达 46 号房间后解锁。出现在卡池里,带黑色边框(之前没有)。里面有一个箱子,装着主钥匙 —— 一个永久物品,每天可以开任意一扇铁门。</p>
+
+<h3>被遗忘之翼</h3>
+<p>客厅暗门(解开谜语后)后面有一条走廊,串着三个不在任何地图上的房间。每个房间里有 M. Holly 日记的一个残片。三个全部读完触发一个独立结局。</p>
+
+<h3>地窖</h3>
+<p>矿洞第 4 层 —— 是的,有第 4 层 —— 仅在你<em>手上还有黄铜钥匙</em>且宝石 12+ 时出现。带着黄铜钥匙下去。地窖里藏着霍利山之冠,真结局路线必备物品。</p>
+
+<p>所有谜题都通了、想挑战真结局?那是一段 30+ 小时的兔子洞,值得单独写一篇 —— 后续会更新。</p>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">谜题列表</div>
+    <ul>
+      <li><a href="#vault">金库密码</a></li>
+      <li><a href="#boiler">锅炉房</a></li>
+      <li><a href="#billiard">台球室</a></li>
+      <li><a href="#parlor">客厅谜语</a></li>
+      <li><a href="#dartboard">飞镖盘</a></li>
+      <li><a href="#constellation">星座谜题</a></li>
+      <li><a href="#hidden">隐藏房间</a></li>
+    </ul>
+  </div>
+
+  <!-- 广告位: 侧边栏 -->
+  <div class="ad-slot ad-sidebar">[ 广告位 — 侧边栏 300x250 ]</div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="beginner.html">新手</a></li>
+      <li><a href="room-46.html">46 号房间</a></li>
+      <li><a href="puzzles.html">谜题</a></li>
+    </ul>
+    <p>Blue Prince 攻略 · 玩家自制站点,与 Dogubomb 及 Raw Fury 无关联。</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
