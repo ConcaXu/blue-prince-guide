@@ -226,6 +226,7 @@ code {
 
 .ad-slot.ad-banner { min-height: 120px; }
 .ad-slot.ad-sidebar { min-height: 250px; }
+.ad-slot:empty { display: none; }
 
 /* Section */
 .section {
