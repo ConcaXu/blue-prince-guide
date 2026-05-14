@@ -6,12 +6,20 @@ A static walkthrough site for Blue Prince. Built for GitHub Pages.
 
 ```
 blue-prince-guide/
-├── index.html         Home + guide cards + tips
+├── index.html         Home + guide cards + tips + Featured Map + FAQ
 ├── beginner.html      Beginner's guide (draft, resources, tiers)
 ├── room-46.html       Room 46 walkthrough
 ├── puzzles.html       All major puzzle solutions
+├── mansion-map.html   Mt. Holly grid + wing layout + Mine cross-section
+├── all-rooms.html     Every room: rarity, doors, cost, effect
+├── items-list.html    Day-bound / persistent / permanent item index
+├── day-1-strategy.html  Reconnaissance route for day 1
+├── endings.html       Standard / Forgotten Wing / True Ending
+├── antechamber.html   Post-Room-46 room and Master Key
+├── puzzle-vault-code.html  Vault code 4558 full derivation
 ├── css/style.css      Dark mansion theme
-└── js/main.js         Nav + TOC scroll
+├── js/main.js         Nav + TOC scroll
+└── zh/                Chinese mirror of all of the above
 ```
 
 ## Deploy to GitHub Pages
@@ -56,10 +64,12 @@ Three slot positions per page: top banner, mid-article, sidebar.
 
 ## Next steps for traffic
 
-- Submit `sitemap.xml` to Google Search Console.
+- ✅ Submit `sitemap.xml` to Google Search Console (30 URLs, EN+ZH).
+- ✅ JSON-LD structured data added (BreadcrumbList, Article, HowTo, FAQPage, VideoGame, WebSite).
+- ✅ 12 inline SVG diagrams across pages (no external images, no copyright risk).
 - Cross-post short tips to r/BluePrince and r/patientgamers.
-- Write 2-3 new pages per week — long-tail keywords like "Blue Prince Vault code", "Blue Prince day 1 strategy" rank fast.
-- Add screenshots once you have your own. Original images rank better than scraped ones.
+- Continue adding 1-2 long-tail pages per month — current keyword targets covered: map, all rooms, items, day 1, endings, Antechamber, Vault code 4558.
+- Replace inline SVGs with original screenshots if/when they become available — original photos rank in Google Images.
 
 ## License
 

@@ -14,6 +14,7 @@
 </script>
 <title>Blue Prince Beginner's Guide — Draft System, Resources & Strategy</title>
 <meta name="description" content="Master Blue Prince from day one. Learn drafting, resource management (Steps, Gems, Keys, Coins), and the best opening rooms for new players.">
+<meta name="keywords" content="Blue Prince beginner guide, Blue Prince tutorial, Blue Prince draft system, Blue Prince resources, Blue Prince Steps, Blue Prince Gems, Blue Prince Keys, Blue Prince opening moves, Blue Prince tips, Blue Prince room tier list">
 
 <link rel="canonical" href="https://blue-prince.concaxu.top/beginner.html">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -24,6 +25,7 @@
 <meta property="og:description" content="Master Blue Prince from day one. Learn drafting, resource management, and the best opening rooms for new players.">
 <meta property="og:site_name" content="Blue Prince Guide">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blue-prince.concaxu.top/favicon.svg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +35,9 @@
 <link rel="alternate" hreflang="en" href="https://blue-prince.concaxu.top/beginner.html">
 <link rel="alternate" hreflang="zh" href="https://blue-prince.concaxu.top/zh/beginner.html">
 <link rel="alternate" hreflang="x-default" href="https://blue-prince.concaxu.top/beginner.html">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://blue-prince.concaxu.top/"},{"@type":"ListItem","position":2,"name":"Beginner Guide","item":"https://blue-prince.concaxu.top/beginner.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Blue Prince Beginner's Guide","datePublished":"2026-04-28","dateModified":"2026-05-14","inLanguage":"en","author":{"@type":"Organization","name":"Blue Prince Guide"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I take notes when playing Blue Prince?","acceptedAnswer":{"@type":"Answer","text":"Yes, real notes. The Vault code, constellation answers, and journal pages all reward note-taking. Players who take notes clear Room 46 in 6–10 days; players who don't average 60+."}},{"@type":"Question","name":"How many days until I can clear Room 46?","acceptedAnswer":{"@type":"Answer","text":"Most players clear Room 46 between days 6 and 10. The world record is day 4."}},{"@type":"Question","name":"Is Blue Prince fully randomized?","acceptedAnswer":{"@type":"Answer","text":"Layout is randomized per day. Puzzle answers (Vault code, constellations) are fixed. Item locations are deterministic given the room they spawn in."}},{"@type":"Question","name":"Do I keep items between days?","acceptedAnswer":{"@type":"Answer","text":"No for day-bound items (Steps, Gems, Keys, Coins). Yes for persistent items (Brass Key, Telescope Lens, etc.) and forever for permanent keepsakes."}},{"@type":"Question","name":"What's the best first room to draft?","acceptedAnswer":{"@type":"Answer","text":"Hallway. It's free to place, has 2 doors, and gives you a junction. Pantry is the best second pick."}},{"@type":"Question","name":"Is there a tutorial?","acceptedAnswer":{"@type":"Answer","text":"There's a brief in-game intro but no full tutorial. The first 2–3 days are effectively your tutorial — see our Day 1 Strategy guide for what to focus on."}}]}</script>
 </head>
 <body>
 
@@ -62,7 +67,7 @@
 <main class="article-main">
 
 <h1>Blue Prince Beginner's Guide</h1>
-<p class="article-meta">Updated May 11, 2026 · 12 min read · For new players</p>
+<p class="article-meta">Updated May 14, 2026 · 12 min read · For new players</p>
 
 <p>Blue Prince looks like a quiet manor exploration game and then quietly reveals it is a deeply strategic roguelike. This guide gets you from "lost in the foyer" to "running confident drafts" in about an hour of play.</p>
 
@@ -79,11 +84,54 @@
   <strong>The mansion resets every day.</strong> Rooms placed yesterday are gone. But upgrades you unlock (permanent keys, lore items, codes you write down) carry over. The progression is in the player's head and notebook, not in the save file.
 </div>
 
+<figure>
+<svg role="img" aria-label="Day timeline showing 50 steps decreasing across four phases" viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg">
+<title>Daily step budget</title>
+<rect width="720" height="200" fill="#22202b" rx="8"/>
+<text x="360" y="32" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="18" font-weight="700">Daily Step Budget (50 → 0)</text>
+<rect x="40" y="70" width="640" height="40" fill="#2a2735" stroke="#3a3645" stroke-width="1"/>
+<rect x="40" y="70" width="160" height="40" fill="#8b6fd6" opacity="0.65"/>
+<rect x="200" y="70" width="240" height="40" fill="#b89dff" opacity="0.55"/>
+<rect x="440" y="70" width="160" height="40" fill="#d4b572" opacity="0.55"/>
+<rect x="600" y="70" width="80" height="40" fill="#78c08a" opacity="0.55"/>
+<g font-family="Georgia, serif" font-size="12" fill="#e8e4f0" text-anchor="middle">
+<text x="120" y="95">Setup</text><text x="320" y="95">Resource pump</text><text x="520" y="95">Solving</text><text x="640" y="95">Bed</text>
+</g>
+<g font-family="Georgia, serif" font-size="11" fill="#a8a3b8" text-anchor="middle">
+<text x="40" y="135">50</text><text x="200" y="135">40</text><text x="440" y="135">20</text><text x="600" y="135">5</text><text x="680" y="135">0</text>
+<text x="360" y="160">Steps remaining →</text>
+</g>
+</svg>
+<figcaption class="article-meta">Each phase has different goals. Steps refill in the Pantry/Kitchen mid-phase.</figcaption>
+</figure>
+
 <h2 id="draft-system">The Draft System</h2>
 
 <p>When you approach a closed door, you get a <strong>hand of 3 rooms</strong> drawn from the room deck. Pick one — it becomes the next room. The other two go to the discard pile. Some rooms re-shuffle the discard back in; most don't.</p>
 
 <h3>Reading a Room Card</h3>
+
+<figure>
+<svg role="img" aria-label="Draft hand of three room cards with arrows to pick and discard" viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg">
+<title>Draft hand of 3 cards</title>
+<rect width="720" height="280" fill="#22202b" rx="8"/>
+<text x="360" y="32" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="16" font-weight="700">Draft Hand: Pick 1 of 3</text>
+<rect x="80" y="60" width="120" height="160" rx="8" fill="#2a2735" stroke="#8b6fd6" stroke-width="3"/>
+<text x="140" y="100" text-anchor="middle" fill="#e8e4f0" font-family="Georgia, serif" font-size="14" font-weight="700">Hallway</text>
+<text x="140" y="125" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="11">2 doors · free</text>
+<text x="140" y="200" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="11">common</text>
+<rect x="300" y="60" width="120" height="160" rx="8" fill="#2a2735" stroke="#b89dff" stroke-width="3"/>
+<text x="360" y="100" text-anchor="middle" fill="#e8e4f0" font-family="Georgia, serif" font-size="14" font-weight="700">Pantry</text>
+<text x="360" y="125" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="11">2 doors · +5 Steps</text>
+<text x="360" y="200" text-anchor="middle" fill="#b89dff" font-family="Georgia, serif" font-size="11">uncommon</text>
+<rect x="520" y="60" width="120" height="160" rx="8" fill="#2a2735" stroke="#d67878" stroke-width="3"/>
+<text x="580" y="100" text-anchor="middle" fill="#e8e4f0" font-family="Georgia, serif" font-size="14" font-weight="700">Bedroom</text>
+<text x="580" y="125" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="11">sleep trap</text>
+<text x="580" y="200" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="11">common</text>
+<text x="360" y="255" text-anchor="middle" fill="#78c08a" font-family="Georgia, serif" font-size="13" font-style="italic">Pick: Pantry. Skip Hallway (lower value). Avoid Bedroom (sleep trap).</text>
+</svg>
+<figcaption class="article-meta">Read all three cards. Rarity color shows on the border. The Pantry's +5 Steps trumps Hallway most days.</figcaption>
+</figure>
 
 <p>Every room card shows four things:</p>
 <ul>
@@ -128,6 +176,26 @@
 <p>Gems are how you get into the <em>good</em> rooms. Most legendary rooms cost 4–6 Gems to draft. Casual players reach day 10 with 8–12 Gems total. Strong players hit day 10 with 30+.</p>
 
 <p>The compounding source is the <strong>Mine</strong>. Place it once, run a Storeroom or Strongroom next to it, and you double your daily Gem income. Don't sleep on the Mine just because it has only one door.</p>
+
+<figure>
+<svg role="img" aria-label="Resource loop diagram showing Mine to Gems to Storeroom cycle" viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg">
+<title>Resource loop: Mine and Storeroom</title>
+<rect width="720" height="280" fill="#22202b" rx="8"/>
+<text x="360" y="32" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="16" font-weight="700">Resource Loop: Mine ⇄ Storeroom</text>
+<circle cx="180" cy="160" r="50" fill="#2a2735" stroke="#8b6fd6" stroke-width="3"/>
+<text x="180" y="160" text-anchor="middle" fill="#e8e4f0" font-family="Georgia, serif" font-size="14" font-weight="700">Mine</text>
+<text x="180" y="180" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="11">+5 Gems</text>
+<circle cx="540" cy="160" r="50" fill="#2a2735" stroke="#d4b572" stroke-width="3"/>
+<text x="540" y="160" text-anchor="middle" fill="#e8e4f0" font-family="Georgia, serif" font-size="14" font-weight="700">Storeroom</text>
+<text x="540" y="180" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="11">×2 multiplier</text>
+<path d="M 230 145 Q 360 100 490 145" stroke="#b89dff" stroke-width="3" fill="none" marker-end="url(#arrow1)"/>
+<path d="M 490 175 Q 360 220 230 175" stroke="#d4b572" stroke-width="3" fill="none" marker-end="url(#arrow1)"/>
+<defs><marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d4b572"/></marker></defs>
+<text x="360" y="105" text-anchor="middle" fill="#b89dff" font-family="Georgia, serif" font-size="12">+5 raw Gems</text>
+<text x="360" y="240" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="12">→ 10 Gems banked</text>
+</svg>
+<figcaption class="article-meta">Place the Mine and Storeroom adjacent. Each Mine visit yields 5 raw Gems; the Storeroom doubles them on entry.</figcaption>
+</figure>
 
 <!-- AD: Mid -->
 <div class="ad-slot"></div>
@@ -183,6 +251,34 @@
   <li>Read the <a href="puzzles.html">puzzle solutions</a> — knowing the answers in advance lets you build runs around solving them.</li>
   <li>Then attempt the <a href="room-46.html">Room 46 walkthrough</a>. You'll need 3–4 specific items and a route plan.</li>
 </ul>
+
+<h2 id="mistakes">Common Beginner Mistakes</h2>
+<ul>
+  <li><strong>Drafting the Bedroom too early.</strong> Every entry triggers a sleep prompt. Place it off your main route.</li>
+  <li><strong>Burning Keys on wooden doors.</strong> Wooden doors open by other means. Save Keys for steel doors.</li>
+  <li><strong>Skipping the Pantry.</strong> +5 Steps is the highest single-room Step boost in the game.</li>
+  <li><strong>Trying to clear everything in one day.</strong> Information carries; Steps don't. Plan multi-day strategies.</li>
+  <li><strong>Not reading notes.</strong> Vault code letters and constellation clues are in plain notes. Read everything.</li>
+  <li><strong>Drafting the Mine without Gems.</strong> Going down requires 6 Gems for the Brass Key. Without 8+ Gems on hand, skip the Mine.</li>
+  <li><strong>Misclicking a Bedroom into "sleep yes."</strong> The dialog defaults vary. Always read it.</li>
+  <li><strong>Drafting the Trophy Room early.</strong> Looks shiny (gold border) but is gated by the Dartboard puzzle. Skip on early runs.</li>
+</ul>
+
+<h2 id="faq">Beginner FAQ</h2>
+<div class="info-box"><strong>Should I take notes?</strong> Yes. The Vault code (4558) and constellations are best tracked outside the game.</div>
+<div class="info-box"><strong>Days to clear Room 46?</strong> 6–10 typical. World record is day 4.</div>
+<div class="info-box"><strong>Is the game randomized?</strong> Layout yes; puzzle answers no.</div>
+<div class="info-box"><strong>Items between days?</strong> Day-bound resources reset; persistent items survive.</div>
+<div class="info-box"><strong>Best first room?</strong> Hallway. Pantry second.</div>
+<div class="info-box"><strong>Tutorial?</strong> Brief intro only — see <a href="day-1-strategy.html">Day 1 Strategy</a> for what to focus on.</div>
+
+<h2 id="related">Related Guides</h2>
+<div class="card-grid">
+  <article class="card"><span class="card-tag">Strategy</span><h3>Day 1 Strategy</h3><p>What to do on your first day. Reconnaissance over progress.</p><a href="day-1-strategy.html" class="card-link">Plan day 1</a></article>
+  <article class="card"><span class="card-tag">Reference</span><h3>All Rooms List</h3><p>Every room with rarity, doors, cost, and effect.</p><a href="all-rooms.html" class="card-link">Room database</a></article>
+  <article class="card"><span class="card-tag">Reference</span><h3>Items List</h3><p>Day-bound, persistent, and permanent items explained.</p><a href="items-list.html" class="card-link">Item index</a></article>
+  <article class="card"><span class="card-tag">Reference</span><h3>Mansion Map</h3><p>Visual layout of Mt. Holly's wings and the Mine.</p><a href="mansion-map.html" class="card-link">See the map</a></article>
+</div>
 
 </main>
 
