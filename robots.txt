@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://blue-prince.concaxu.top/sitemap.xml
+Sitemap: https://concaxu.top/sitemap.xml
