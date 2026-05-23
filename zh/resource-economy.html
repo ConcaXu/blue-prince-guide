@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince 资源经济 — Gem / Key / Step / Coin 完整解析</title>
+<meta name="description" content="深入解析 Blue Prince 资源经济。Gem 怎么来、Key 为何看似足实则紧、能回本的房间、以及最重要的兑换比率。">
+<meta name="keywords" content="Blue Prince Gem,Blue Prince Key,Blue Prince Step,Blue Prince Coin,Blue Prince 经济,Blue Prince 资源,Blue Prince 工坊,Blue Prince 兑换">
+
+<link rel="canonical" href="https://concaxu.top/zh/resource-economy.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/zh/resource-economy.html">
+<meta property="og:title" content="Blue Prince 资源经济 — 全面拆解">
+<meta property="og:description" content="Gem、Key、Step、Coin 实际怎么流。每次抽卡决定背后的数学。">
+<meta property="og:site_name" content="Blue Prince 攻略">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/resource-economy.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/resource-economy.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/resource-economy.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://concaxu.top/zh/"},{"@type":"ListItem","position":2,"name":"攻略","item":"https://concaxu.top/zh/beginner.html"},{"@type":"ListItem","position":3,"name":"资源经济","item":"https://concaxu.top/zh/resource-economy.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Blue Prince 资源经济","datePublished":"2026-05-21","dateModified":"2026-05-21","inLanguage":"zh-CN","author":{"@type":"Organization","name":"Blue Prince 攻略"}}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a>
+    <button class="menu-toggle" aria-label="切换菜单">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beginner.html" class="active">新手指南</a></li>
+        <li><a href="room-46.html">46 号房间</a></li>
+        <li><a href="puzzles.html">谜题</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../resource-economy.html">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="resource-economy.html" class="active">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince 资源经济 — 每次跑图背后的数学</h1>
+<p class="article-meta">2026 年 5 月 21 日更新 · 9 分钟阅读 · 攻略</p>
+
+<p>Blue Prince 有四种资源：<strong>Step、Key、Gem、Coin</strong>。它们在背包栏里看起来可以互换，但其实不是——每个产出率、稀缺度、兑换路径都不同。理解它们实际怎么流，就是 6 天到达 46 号房间的玩家和第 11 天还在抽 Pantry 的玩家的区别。本页拆解实际数字：每种资源来自哪、能兑换成什么、哪些兑换真值得做。</p>
+
+<div class="info-box">
+  <strong>一句话总结：</strong>Step 充足，Key 紧缺，Gem 是伪货币，Coin 是谜题燃料。工坊「4 Gem 换 1 Key」是游戏里最重要的兑换。
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="overview">资源概览</h2>
+
+<table class="guide-table">
+  <thead><tr><th>资源</th><th>每日上限</th><th>主来源</th><th>主消耗</th><th>稀缺度</th></tr></thead>
+  <tbody>
+    <tr><td>Step</td><td>无（再生）</td><td>Pantry、卧室睡觉</td><td>抽卡、行走</td><td>低</td></tr>
+    <tr><td>Key</td><td>~6 / 天</td><td>Library、工坊、衣帽间</td><td>钢门、金库</td><td><strong>高</strong></td></tr>
+    <tr><td>Gem</td><td>~25 / 天</td><td>矿洞、温室、音乐室</td><td>工坊、商人</td><td>中</td></tr>
+    <tr><td>Coin</td><td>~10 / 天</td><td>卫生间、起居室、掉落</td><td>飞镖盘、商人、赌博</td><td>中</td></tr>
+  </tbody>
+</table>
+
+<h2 id="steps">Step — 时间资源</h2>
+
+<p>Step 最接近「体力」。每个动作都耗 Step：在房间之间走动（每格 1 Step）、抽卡新房间（2-5 Step，看稀有度）、和大多数谜题互动（每次 1 Step）。每天开局 <strong>30 Step</strong>，归零当日结束。</p>
+
+<h3>Step 生成器</h3>
+<ul>
+  <li><strong>Pantry</strong> —— 每次进返 3 Step。最重要的 Step 生成器。永远抽。</li>
+  <li><strong>卧室（睡觉）</strong> —— 完整重置到 30 Step，但当日结束。卡住时才划算。</li>
+  <li><strong>商人 Coin → Step 兑换</strong> —— 2 Coin 换 5 Step。Coin 多 Step 紧时不错。</li>
+</ul>
+
+<div class="tip-box">
+  <strong>Step 效率法则：</strong>如果一个房间抽卡的 Step 比它当天返还的多，就是 Step 黑洞。Pantry、Library、工坊是仅有三个在一天内可靠回本 Step 的房间。
+</div>
+
+<h2 id="keys">Key — 真正的瓶颈</h2>
+
+<p>Key 是<em>真正</em>会卡住你跑图的资源。你可以有 200 Gem 和 50 Coin，却因为路上每道钢门都需要 Key 而堵死。追踪 Key 库存是 Blue Prince 玩家能养成的最高影响力的习惯。</p>
+
+<h3>Key 来源</h3>
+<table class="guide-table">
+  <thead><tr><th>来源</th><th>产出</th><th>可靠度</th></tr></thead>
+  <tbody>
+    <tr><td>Library（首次）</td><td>1 黄铜钥匙</td><td>保底</td></tr>
+    <tr><td>工坊（造）</td><td>4 Gem = 1 Key，每天 1 次</td><td>有 4 Gem 时</td></tr>
+    <tr><td>衣帽间</td><td>0 或 1 Key</td><td>~50% 概率</td></tr>
+    <tr><td>抽卡随机掉落</td><td>1 Key，~10% 概率</td><td>不稳定</td></tr>
+    <tr><td>开金库</td><td>2-3 Key</td><td>每存档 1 次</td></tr>
+  </tbody>
+</table>
+
+<h3>Key 消耗</h3>
+<ul>
+  <li><strong>钢门</strong> —— 每扇 1 Key。多数东 / 西翼门。</li>
+  <li><strong>金库门</strong> —— 1 Key（独立于 4558 密码）。</li>
+  <li><strong>矿洞下降</strong> —— 第 2 层需 1 Key，第 3 层需 2 Key。</li>
+  <li><strong>前厅宝箱</strong> —— 1 Key（仅 46 号房间后）。</li>
+</ul>
+
+<p>典型一天烧 4-5 Key。典型一天产 3-4 Key。差额通常由第 4-5 天开金库时塞进来的 2-3 Key 弥补。跳过金库的话，第 6 天起 Key 会饿死你。</p>
+
+<h2 id="gems">Gem — 兑换货币</h2>
+
+<p>Gem 是 Blue Prince 最接近黄金的东西。在背包里大量存在，能换几乎任何你真正需要的东西。它的主要价值不在自身——在于在工坊换 Key。</p>
+
+<h3>Gem 来源</h3>
+<ul>
+  <li><strong>矿洞各层</strong> —— 第 1 层：1/次。第 2 层：2/次。第 3 层：3/次（锅炉加成后 4）。第 4 层（地窖）：5/次。</li>
+  <li><strong>温室</strong> —— 所有未来 Gem 拾取 +2 加成，永久。</li>
+  <li><strong>音乐室</strong> —— 首次进送 8 Gem。</li>
+  <li><strong>花园</strong> —— 首次进送 5 Gem。</li>
+</ul>
+
+<!-- AD: Mid -->
+<div class="ad-slot"></div>
+
+<h3>Gem 兑换比率</h3>
+<table class="guide-table">
+  <thead><tr><th>兑换</th><th>比率</th><th>实际价值</th></tr></thead>
+  <tbody>
+    <tr><td>工坊：Gem → Key</td><td>4 Gem = 1 Key</td><td><strong>全游戏最佳兑换。</strong>永远做。</td></tr>
+    <tr><td>商人：Gem → Coin</td><td>3 Gem = 1 Coin</td><td>差。除非走投无路。</td></tr>
+    <tr><td>商人：Gem → Step</td><td>5 Gem = 5 Step</td><td>一般。只在当日末尾应急。</td></tr>
+    <tr><td>矿洞下降：Gem → 访问权</td><td>10 Gem 解锁第 4 层</td><td>真结局需要。攒 Gem 给这个。</td></tr>
+  </tbody>
+</table>
+
+<h2 id="coins">Coin — 谜题燃料</h2>
+
+<p>Coin 是堆量最小但最看情境的资源。一个关键用途——<a href="puzzle-dartboard.html">飞镖盘谜题</a>需要 3 Coin 才能保底 180。除此之外，零星流入商人购物和少数小结果。</p>
+
+<h3>Coin 来源</h3>
+<ul>
+  <li><strong>卫生间</strong> —— 每次进 +1 Coin。与 Pantry 相邻可叠。</li>
+  <li><strong>起居室</strong> —— 首次进 +1 Coin。</li>
+  <li><strong>吸烟室</strong> —— 首次进 +1 Coin。</li>
+  <li><strong>台球室奖励</strong> —— 首次解谜后一次性 20 Coin。</li>
+  <li><strong>抽卡掉落</strong> —— ~15% 概率掉 1-2 Coin。</li>
+</ul>
+
+<h3>Coin 消耗</h3>
+<ul>
+  <li><strong>飞镖盘稳手 buff</strong> —— 每镖 1 Coin，每次尝试 3 Coin。要稳定 180 必须。</li>
+  <li><strong>商人</strong> —— 随机物品，大多没用。</li>
+  <li><strong>老虎机</strong>（稀有房间）—— 赌博，期望负收益。</li>
+</ul>
+
+<div class="tip-box">
+  <strong>Coin 囤积法则：</strong>到第 4 天攒至少 5 Coin。飞镖盘首次解付 20 Coin，之后整个跑图都能给商人购买供血。
+</div>
+
+<h2 id="conversions">兑换图</h2>
+
+<p>思考资源最清晰的方式是兑换图：</p>
+
+<table class="guide-table">
+  <thead><tr><th>从</th><th>到</th><th>怎么换</th><th>值得吗？</th></tr></thead>
+  <tbody>
+    <tr><td>Gem</td><td>Key</td><td>工坊，4:1</td><td>✓ 永远</td></tr>
+    <tr><td>Coin</td><td>神射别针</td><td>飞镖盘，3 Coin</td><td>✓ 每存档一次</td></tr>
+    <tr><td>Coin</td><td>Step</td><td>商人，2:5</td><td>~ 仅当日末</td></tr>
+    <tr><td>Step</td><td>任何</td><td>卧室（完整重置，但当日结束）</td><td>~ 仅卡住时</td></tr>
+    <tr><td>Gem</td><td>Coin</td><td>商人，3:1</td><td>✗ 跳过</td></tr>
+    <tr><td>Key</td><td>任何</td><td>—</td><td>Key 不能反向兑换。直接用掉。</td></tr>
+  </tbody>
+</table>
+
+<h2 id="daily-budget">每日预算模板</h2>
+
+<p>第 2-5 天的稳定每日预算：</p>
+
+<ul>
+  <li><strong>Step：</strong>开 30。结束 ≥5（留 1 次救命重抽）。花 ~25。</li>
+  <li><strong>Key：</strong>开 2-3，得 2-3，花 4-5。净：-1 到 0/天。</li>
+  <li><strong>Gem：</strong>开 0，得 15-25，工坊花 4-8。结 10+。</li>
+  <li><strong>Coin：</strong>开局用昨天剩的。每天得 2-3。仅在解飞镖盘的一天花。</li>
+</ul>
+
+<h2 id="faq">资源常见问题</h2>
+
+<div class="info-box">
+  <strong>最重要的资源是？</strong>
+  Key。它是瓶颈。别的都能替代；Key 只能赚或造。
+</div>
+
+<div class="info-box">
+  <strong>每天都该在工坊造 Key 吗？</strong>
+  是。有 4+ Gem 的每一天。4:1 是全游戏最佳兑换。
+</div>
+
+<div class="info-box">
+  <strong>飞镖盘前需要多少 Coin？</strong>
+  3 个。2 个不够——见<a href="puzzle-dartboard.html">飞镖盘攻略</a>。
+</div>
+
+<div class="info-box">
+  <strong>一天最佳开局房间是？</strong>
+  Pantry 相邻房间。每次进返 +3 Step 中午前就回本。
+</div>
+
+<div class="info-box">
+  <strong>资源跨天保留吗？</strong>
+  Key、Gem、Coin 保留。Step 每天早晨重置到 30。
+</div>
+
+<h2 id="related">相关攻略</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">攻略</span>
+    <h3>房间 Tier List</h3>
+    <p>哪些房间产什么资源。S 到 D 评级。</p>
+    <a href="room-tier-list.html" class="card-link">查看评级</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">攻略</span>
+    <h3>第 1 天策略</h3>
+    <p>第一步就把资源经济铺好。</p>
+    <a href="day-1-strategy.html" class="card-link">规划第 1 天</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">攻略</span>
+    <h3>常见错误</h3>
+    <p>烧光资源、毁掉跑图的常见误操作。</p>
+    <a href="mistakes-to-avoid.html" class="card-link">查看更多</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">参考</span>
+    <h3>物品列表</h3>
+    <p>改变经济的永久物品（球杆、神射别针、黄铜钥匙）。</p>
+    <a href="items-list.html" class="card-link">物品索引</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">本页目录</div>
+    <ul>
+      <li><a href="#overview">概览表</a></li>
+      <li><a href="#steps">Step</a></li>
+      <li><a href="#keys">Key</a></li>
+      <li><a href="#gems">Gem</a></li>
+      <li><a href="#coins">Coin</a></li>
+      <li><a href="#conversions">兑换图</a></li>
+      <li><a href="#daily-budget">每日预算</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#related">相关攻略</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="beginner.html">新手</a></li>
+      <li><a href="room-46.html">46 号房间</a></li>
+      <li><a href="puzzles.html">谜题</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="privacy.html">隐私</a></li>
+      <li><a href="terms.html">条款</a></li>
+    </ul>
+    <p>Blue Prince 攻略 · 粉丝站点，与 Dogubomb 或 Raw Fury 无关。</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

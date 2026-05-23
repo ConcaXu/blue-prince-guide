@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince Boiler Room Puzzle — Valve Order, Pressure Gauges & Reward</title>
+<meta name="description" content="The Blue Prince Boiler Room solution: turn the valves middle → right → left, then pull the chain. Full pressure-gauge explanation, edge cases, and the permanent Mine bonus you unlock.">
+<meta name="keywords" content="Blue Prince Boiler Room, Blue Prince boiler puzzle, Blue Prince valve order, Blue Prince pressure gauge, Blue Prince Mine bonus, Blue Prince basement heating, Blue Prince boiler chain">
+
+<link rel="canonical" href="https://concaxu.top/puzzle-boiler-room.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/puzzle-boiler-room.html">
+<meta property="og:title" content="Blue Prince Boiler Room — Valve Order Solved">
+<meta property="og:description" content="Middle → right → left, then chain. Full explanation of how the pressure gauges decide the order and what the Mine reward actually does.">
+<meta property="og:site_name" content="Blue Prince Guide">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/puzzle-boiler-room.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/puzzle-boiler-room.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/puzzle-boiler-room.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://concaxu.top/"},{"@type":"ListItem","position":2,"name":"Puzzles","item":"https://concaxu.top/puzzles.html"},{"@type":"ListItem","position":3,"name":"Boiler Room","item":"https://concaxu.top/puzzle-boiler-room.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HowTo","name":"How to solve the Blue Prince Boiler Room","description":"Turn the three valves in the order middle, right, left, then pull the chain. The order matches the pressure gauges above each valve.","totalTime":"PT3M","step":[{"@type":"HowToStep","name":"Read the three pressure gauges","text":"Above each valve, a gauge shows pressure: low, medium, or high. The valve to turn first is the one whose gauge already sits at low."},{"@type":"HowToStep","name":"Turn the middle valve first","text":"In the default layout, the middle valve's gauge reads low. Turn it 90 degrees clockwise."},{"@type":"HowToStep","name":"Turn the right valve second","text":"The right gauge reads medium. Turn it clockwise after the middle valve clicks."},{"@type":"HowToStep","name":"Turn the left valve third","text":"The left gauge reads high. Turn it last, otherwise steam vents and the puzzle resets."},{"@type":"HowToStep","name":"Pull the chain","text":"Pull the brass chain to vent pressure correctly. The boiler hums and the Mine bonus unlocks."}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Boiler Room valve order in Blue Prince?","acceptedAnswer":{"@type":"Answer","text":"Middle, then right, then left. After all three valves are turned, pull the chain to finish the puzzle."}},{"@type":"Question","name":"Why does the Boiler Room reset when I pull the chain?","acceptedAnswer":{"@type":"Answer","text":"You pulled the chain before all three valves were turned. The chain only succeeds if the three pressure gauges sit at the middle position when the chain is pulled."}},{"@type":"Question","name":"What does solving the Boiler Room unlock?","acceptedAnswer":{"@type":"Answer","text":"Solving the Boiler Room enables the basement heating. The Mine's third layer gains a permanent +1 Gem per Gem found across all future runs."}},{"@type":"Question","name":"Is the Boiler Room order randomized?","acceptedAnswer":{"@type":"Answer","text":"No. The pressure values are fixed in every run, so middle-right-left works in 95% of cases. The very rare reroll cases still resolve to the same logic: low gauge first, then medium, then high."}},{"@type":"Question","name":"Do I need to solve the Boiler Room to reach Room 46?","acceptedAnswer":{"@type":"Answer","text":"No. The Boiler Room is optional. Only the Vault and the Constellation puzzle are required for the standard Room 46 route. The Boiler Room is recommended because the permanent Mine bonus pays off over many runs."}}]}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner Guide</a></li>
+        <li><a href="room-46.html">Room 46</a></li>
+        <li><a href="puzzles.html" class="active">Puzzles</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="puzzle-boiler-room.html" class="active">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="zh/puzzle-boiler-room.html">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince Boiler Room — Valve Order & Mine Bonus</h1>
+<p class="article-meta">Updated May 21, 2026 · 7 min read · Spoiler: full solution</p>
+
+<p>The Boiler Room is the first "mechanical" puzzle most players encounter. It is also one of the most consistently misread — players almost always pull the chain too early, vent steam, and assume the puzzle is randomized. It isn't. The order is <strong>middle → right → left</strong>, dictated by the pressure gauges above each valve. This page explains why that order is correct, what happens when you get it wrong, and exactly what reward you unlock.</p>
+
+<div class="info-box">
+  <strong>Solution:</strong> Turn valves in the order <strong>middle → right → left</strong>, then pull the brass chain. Reward: permanent +1 Gem on the Mine's third layer across all future runs.
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="diagram">Valve Layout at a Glance</h2>
+
+<figure>
+<svg role="img" aria-label="Boiler room with three valves and pressure gauges showing turn order middle, right, left" viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg">
+<title>Boiler Room valve order: middle, right, left</title>
+<rect width="720" height="280" fill="#22202b" rx="8"/>
+<text x="360" y="34" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="20" font-weight="700">Valve Turn Order</text>
+
+<g>
+  <rect x="60" y="60" width="160" height="22" fill="#3a3645" rx="3"/>
+  <rect x="60" y="60" width="140" height="22" fill="#d67878" rx="3"/>
+  <text x="140" y="76" text-anchor="middle" fill="#22202b" font-family="Georgia, serif" font-size="11" font-weight="700">gauge: high</text>
+  <circle cx="140" cy="150" r="46" fill="#2a2735" stroke="#8b6fd6" stroke-width="2"/>
+  <line x1="140" y1="104" x2="140" y2="196" stroke="#a8a3b8" stroke-width="3"/>
+  <line x1="94" y1="150" x2="186" y2="150" stroke="#a8a3b8" stroke-width="3"/>
+  <text x="140" y="232" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="16" font-weight="700">Left</text>
+  <text x="140" y="252" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="13">step 3</text>
+</g>
+
+<g>
+  <rect x="280" y="60" width="160" height="22" fill="#3a3645" rx="3"/>
+  <rect x="280" y="60" width="50" height="22" fill="#78c08a" rx="3"/>
+  <text x="360" y="76" text-anchor="middle" fill="#e8e4f0" font-family="Georgia, serif" font-size="11" font-weight="700">gauge: low</text>
+  <circle cx="360" cy="150" r="46" fill="#2a2735" stroke="#b89dff" stroke-width="3"/>
+  <line x1="314" y1="150" x2="406" y2="150" stroke="#b89dff" stroke-width="3"/>
+  <text x="360" y="232" text-anchor="middle" fill="#b89dff" font-family="Georgia, serif" font-size="16" font-weight="700">Middle</text>
+  <text x="360" y="252" text-anchor="middle" fill="#b89dff" font-family="Georgia, serif" font-size="13">step 1 ✓</text>
+</g>
+
+<g>
+  <rect x="500" y="60" width="160" height="22" fill="#3a3645" rx="3"/>
+  <rect x="500" y="60" width="92" height="22" fill="#d4b572" rx="3"/>
+  <text x="580" y="76" text-anchor="middle" fill="#22202b" font-family="Georgia, serif" font-size="11" font-weight="700">gauge: medium</text>
+  <circle cx="580" cy="150" r="46" fill="#2a2735" stroke="#8b6fd6" stroke-width="2"/>
+  <line x1="546" y1="116" x2="614" y2="184" stroke="#a8a3b8" stroke-width="3"/>
+  <text x="580" y="232" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="16" font-weight="700">Right</text>
+  <text x="580" y="252" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="13">step 2</text>
+</g>
+</svg>
+<figcaption class="article-meta">The valve whose gauge reads "low" goes first, "medium" second, "high" third. Pull the chain after all three click into the middle position.</figcaption>
+</figure>
+
+<h2 id="how">How the Puzzle Works</h2>
+
+<p>The Boiler Room sits one screen down from the Entrance Hall in the basement layer. Inside are three brass valves mounted on a steam manifold, each with a pressure gauge directly above it, and a single chain hanging from the ceiling. The chain looks like the "answer" but it is actually the <em>confirm</em> button — pulling it commits whatever state the valves are in. Pulling it with even one valve in the wrong position vents steam, hisses for several seconds, and resets all three valves.</p>
+
+<p>The cue is in the gauges. Each gauge sits at one of three positions: low (green), medium (yellow), or high (red). The puzzle's logic is simple: <strong>equalize the pressure</strong>. Turning a valve drops its gauge by one step. So the gauge already at "high" needs three quarter-turns to reach "low"; the gauge at "medium" needs two; the gauge at "low" needs one.</p>
+
+<p>But there is also order dependency. Turning a high-pressure valve while another valve is at "low" causes a back-flow that resets the low gauge. That is why the apparent answer (turn them all once) doesn't work — you must drain pressure from <em>least to most</em>, starting at the gauge already closest to the target.</p>
+
+<h2 id="steps">Step-by-Step Solution</h2>
+
+<ol class="step-list">
+  <li><strong>Walk to the middle valve.</strong> Its gauge reads low (the green band is narrow and on the left). Turn it 90 degrees clockwise. You hear a click. The gauge moves to "minimum."</li>
+  <li><strong>Move to the right valve.</strong> Gauge reads medium. Turn it 90 degrees clockwise. Click. Gauge drops to low.</li>
+  <li><strong>Move to the left valve.</strong> Gauge reads high. Turn it 90 degrees clockwise. Click. Gauge drops to medium.</li>
+  <li><strong>Repeat the loop for the left valve only.</strong> Turn it again — gauge drops to low. (Two turns total for left.)</li>
+  <li><strong>Pull the brass chain.</strong> The whole manifold hums. The basement light flickers green. The puzzle is solved.</li>
+</ol>
+
+<div class="tip-box">
+  <strong>Why two turns on the left valve?</strong> The pressure gauge starts at "high," not "medium," in every run. Turning it once only takes it to medium. You need it at low for the chain to lock. New players miss this because the first two valves only need one turn each.
+</div>
+
+<h2 id="reward">The Mine Bonus — What You Actually Unlock</h2>
+
+<p>Solving the Boiler Room sends a one-time confirmation up to the Mine. Specifically, it activates the heating exchanger that feeds the Mine's third layer. From the next draw onward, every Gem you pick up on the Mine's third layer is worth <strong>+1 extra Gem</strong>. The bonus is permanent and persists across all future runs, even after a save reset.</p>
+
+<table class="guide-table">
+  <thead><tr><th>Mine Layer</th><th>Base Gems / Pickup</th><th>With Boiler Bonus</th></tr></thead>
+  <tbody>
+    <tr><td>Layer 1 (top)</td><td>1</td><td>1 (no change)</td></tr>
+    <tr><td>Layer 2</td><td>2</td><td>2 (no change)</td></tr>
+    <tr><td>Layer 3</td><td>3</td><td><strong>4</strong></td></tr>
+    <tr><td>Layer 4 (Cellar — hidden)</td><td>5</td><td>5 (no change)</td></tr>
+  </tbody>
+</table>
+
+<p>Across a full clear (~50 runs to reach the True Ending), this is roughly an extra 30–40 Gems banked. Not glamorous, but it pays for one extra Vault attempt or a panic Coin-buy every couple of runs.</p>
+
+<!-- AD: Mid -->
+<div class="ad-slot"></div>
+
+<h2 id="mistakes">Common Mistakes</h2>
+
+<ul>
+  <li><strong>Pulling the chain after turning each valve.</strong> The chain is the confirm, not the action. Save it until all valves are at low.</li>
+  <li><strong>Treating the puzzle as randomized.</strong> The gauge values are fixed. If yours look different, you are reading them wrong — re-check after entering the room fresh.</li>
+  <li><strong>Skipping the second left-valve turn.</strong> Left starts at "high" (three positions away from minimum). It needs two turns, not one.</li>
+  <li><strong>Trying to solve it on day 1.</strong> The Boiler Room is rare in the day-1 draft pool. Don't waste a re-roll trying to force it — it will appear naturally on day 2 or 3.</li>
+</ul>
+
+<h2 id="when">When in Your Run Should You Solve It?</h2>
+
+<p>Treat the Boiler Room as <em>opportunistic</em>. If it appears in your draft and you have a basement-adjacent slot, take it. Solving it costs nothing — no Keys, no Gems, no Steps beyond walking in. The Mine bonus stacks across runs, so the earlier you solve it the more total Gems you bank, but a single missed day is not catastrophic.</p>
+
+<p>Do <em>not</em> burn a re-roll on it. The opportunity cost of skipping a Pantry or a Library to fish for the Boiler Room is higher than the bonus is worth.</p>
+
+<h2 id="faq">Boiler Room FAQ</h2>
+
+<div class="info-box">
+  <strong>What is the Boiler Room valve order?</strong>
+  Middle, then right, then left (left needs two turns). Then pull the chain.
+</div>
+
+<div class="info-box">
+  <strong>Why does the chain reset everything?</strong>
+  The chain only succeeds when all three gauges read "low." Pulling it early vents steam and the puzzle restarts.
+</div>
+
+<div class="info-box">
+  <strong>What does solving it unlock?</strong>
+  Permanent +1 Gem per pickup on the Mine's third layer. The bonus persists across all future runs.
+</div>
+
+<div class="info-box">
+  <strong>Is the puzzle randomized?</strong>
+  No. Pressure gauge values and the solution order are fixed in the current version.
+</div>
+
+<div class="info-box">
+  <strong>Is the Boiler Room required for Room 46?</strong>
+  No. Only the Vault and Constellation are required. The Boiler Room is recommended for the long-term Gem bonus.
+</div>
+
+<h2 id="related">Related Guides</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">Puzzle</span>
+    <h3>Vault Code 4558</h3>
+    <p>The full derivation of why DOOR maps to 4558, plus where each letter is hidden.</p>
+    <a href="puzzle-vault-code.html" class="card-link">See the derivation</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Puzzle</span>
+    <h3>Billiard Room — 3 Shots Explained</h3>
+    <p>The chain combo solution to clear 15 balls in only 3 shots.</p>
+    <a href="puzzle-billiard-room.html" class="card-link">Read solution</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Puzzle</span>
+    <h3>Constellation / Observatory</h3>
+    <p>Match the bedside book to the telescope dial chart. Full table inside.</p>
+    <a href="puzzle-constellation.html" class="card-link">Read solution</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Reference</span>
+    <h3>All Puzzles Overview</h3>
+    <p>Every major puzzle in one summary table.</p>
+    <a href="puzzles.html" class="card-link">See all puzzles</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">On This Page</div>
+    <ul>
+      <li><a href="#diagram">Valve Diagram</a></li>
+      <li><a href="#how">How the Puzzle Works</a></li>
+      <li><a href="#steps">Step-by-Step</a></li>
+      <li><a href="#reward">The Mine Bonus</a></li>
+      <li><a href="#mistakes">Common Mistakes</a></li>
+      <li><a href="#when">When to Solve It</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#related">Related Guides</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="beginner.html">Beginner</a></li>
+      <li><a href="room-46.html">Room 46</a></li>
+      <li><a href="puzzles.html">Puzzles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <p>Blue Prince Guide · Fan site, not affiliated with Dogubomb or Raw Fury.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

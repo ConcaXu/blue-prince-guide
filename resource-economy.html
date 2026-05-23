@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince Resource Economy — Gems, Keys, Steps, Coins Explained</title>
+<meta name="description" content="A deep look at the Blue Prince resource economy. How Gems generate, why Keys are scarcer than they look, the rooms that pay you back, and the conversion ratios that matter.">
+<meta name="keywords" content="Blue Prince Gems, Blue Prince Keys, Blue Prince Steps, Blue Prince Coins, Blue Prince economy, Blue Prince resources, Blue Prince Workshop, Blue Prince conversion">
+
+<link rel="canonical" href="https://concaxu.top/resource-economy.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/resource-economy.html">
+<meta property="og:title" content="Blue Prince Resource Economy — Full Breakdown">
+<meta property="og:description" content="How Gems, Keys, Steps, and Coins actually flow. The math behind every draft decision.">
+<meta property="og:site_name" content="Blue Prince Guide">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/resource-economy.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/resource-economy.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/resource-economy.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://concaxu.top/"},{"@type":"ListItem","position":2,"name":"Strategy","item":"https://concaxu.top/beginner.html"},{"@type":"ListItem","position":3,"name":"Resource Economy","item":"https://concaxu.top/resource-economy.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"Blue Prince Resource Economy","datePublished":"2026-05-21","dateModified":"2026-05-21","inLanguage":"en","author":{"@type":"Organization","name":"Blue Prince Guide"}}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html" class="active">Beginner Guide</a></li>
+        <li><a href="room-46.html">Room 46</a></li>
+        <li><a href="puzzles.html">Puzzles</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="resource-economy.html" class="active">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="zh/resource-economy.html">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince Resource Economy — The Math Behind Every Run</h1>
+<p class="article-meta">Updated May 21, 2026 · 9 min read · Strategy</p>
+
+<p>Blue Prince has four resources: <strong>Steps, Keys, Gems, and Coins</strong>. They look interchangeable in the inventory bar but they are not — each has a different generation rate, a different scarcity profile, and a different conversion path. Understanding how they actually flow is the difference between a player who reaches Room 46 in 6 days and one who is still rolling Pantries on day 11. This page breaks down the real numbers: where each resource comes from, what it converts to, and which conversions are actually worth doing.</p>
+
+<div class="info-box">
+  <strong>One-line summary:</strong> Steps are abundant, Keys are scarce, Gems are pseudo-currency, Coins are puzzle fuel. The Workshop's 4-Gems-for-1-Key trade is the single most important conversion in the game.
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="overview">Resource Overview</h2>
+
+<table class="guide-table">
+  <thead><tr><th>Resource</th><th>Daily Cap</th><th>Main Source</th><th>Main Sink</th><th>Scarcity</th></tr></thead>
+  <tbody>
+    <tr><td>Steps</td><td>None (regenerate)</td><td>Pantry, Bedroom rest</td><td>Drafting rooms, walking</td><td>Low</td></tr>
+    <tr><td>Keys</td><td>~6 per day</td><td>Library, Workshop, Closet</td><td>Steel doors, Vault</td><td><strong>High</strong></td></tr>
+    <tr><td>Gems</td><td>~25 per day</td><td>Mine, Greenhouse, Conservatory</td><td>Workshop, shops</td><td>Medium</td></tr>
+    <tr><td>Coins</td><td>~10 per day</td><td>Bathroom, Sitting Room, drops</td><td>Dartboard, Vendor, gambling</td><td>Medium</td></tr>
+  </tbody>
+</table>
+
+<h2 id="steps">Steps — The Time Resource</h2>
+
+<p>Steps are the closest thing to "stamina." Every action costs Steps: walking between rooms (1 Step per tile), drafting a new room (2-5 Steps depending on rarity), and engaging with most puzzles (1 Step per interaction). You start each day with <strong>30 Steps</strong> and the day ends when you hit zero.</p>
+
+<h3>Step generators</h3>
+<ul>
+  <li><strong>Pantry</strong> — refunds 3 Steps every entry. The single most important Step generator. Always draft.</li>
+  <li><strong>Bedroom (sleep)</strong> — full reset to 30 Steps, but ends the day. Trade-off only worth it when stuck.</li>
+  <li><strong>Coin → Step trade at Vendor</strong> — 2 Coins for 5 Steps. Decent if you're Coin-rich and Step-poor.</li>
+</ul>
+
+<div class="tip-box">
+  <strong>Step efficiency rule:</strong> If a room costs more Steps to draft than it gives back over the day, it's a Step sink. Pantry, Library, and Workshop are the only three rooms that reliably return their Step cost within a single day.
+</div>
+
+<h2 id="keys">Keys — The Bottleneck</h2>
+
+<p>Keys are the one resource that will <em>actually</em> stop your run. You can have 200 Gems and 50 Coins, and still be locked out of progression because every steel door in your path needs a Key you don't have. Tracking Keys is the single highest-impact habit a Blue Prince player can build.</p>
+
+<h3>Key sources</h3>
+<table class="guide-table">
+  <thead><tr><th>Source</th><th>Yield</th><th>Reliability</th></tr></thead>
+  <tbody>
+    <tr><td>Library (first visit)</td><td>1 Brass Key</td><td>Guaranteed</td></tr>
+    <tr><td>Workshop (craft)</td><td>1 Key per 4 Gems, 1× per day</td><td>If you have 4 Gems</td></tr>
+    <tr><td>Closet</td><td>0 or 1 Key</td><td>~50% chance</td></tr>
+    <tr><td>Random drop on draft</td><td>1 Key, ~10% chance</td><td>Unreliable</td></tr>
+    <tr><td>Vault opening</td><td>2-3 Keys</td><td>Once per save</td></tr>
+  </tbody>
+</table>
+
+<h3>Key sinks</h3>
+<ul>
+  <li><strong>Steel doors</strong> — 1 Key per door. Most East/West Wing doors.</li>
+  <li><strong>Vault door</strong> — 1 Key (separate from the 4558 code).</li>
+  <li><strong>Mine drops</strong> — Layer 2 needs 1 Key to descend, Layer 3 needs 2 Keys.</li>
+  <li><strong>Antechamber chest</strong> — 1 Key (post Room 46 only).</li>
+</ul>
+
+<p>A typical day burns 4-5 Keys. A typical day generates 3-4 Keys. The difference is usually covered by the Vault opening on day 4-5, which dumps 2-3 Keys into your stockpile. If you skip the Vault, expect Key starvation by day 6.</p>
+
+<h2 id="gems">Gems — The Conversion Currency</h2>
+
+<p>Gems are the closest thing Blue Prince has to gold. They sit in your inventory in large numbers and convert into nearly anything you actually need. Their primary value isn't intrinsic — it's the conversion to Keys at the Workshop.</p>
+
+<h3>Gem sources</h3>
+<ul>
+  <li><strong>Mine layers</strong> — Layer 1: 1/pickup. Layer 2: 2/pickup. Layer 3: 3/pickup (4 with Boiler bonus). Layer 4 (Cellar): 5/pickup.</li>
+  <li><strong>Greenhouse</strong> — +2 Gem multiplier on every future pickup, permanent.</li>
+  <li><strong>Conservatory</strong> — flat 8 Gems on first visit.</li>
+  <li><strong>Garden</strong> — flat 5 Gems on first visit.</li>
+</ul>
+
+<!-- AD: Mid -->
+<div class="ad-slot"></div>
+
+<h3>Gem conversion ratios</h3>
+<table class="guide-table">
+  <thead><tr><th>Trade</th><th>Ratio</th><th>Effective Value</th></tr></thead>
+  <tbody>
+    <tr><td>Workshop: Gems → Key</td><td>4 Gems = 1 Key</td><td><strong>Best trade in the game.</strong> Always take.</td></tr>
+    <tr><td>Vendor: Gems → Coin</td><td>3 Gems = 1 Coin</td><td>Bad. Skip unless desperate.</td></tr>
+    <tr><td>Vendor: Gems → Step</td><td>5 Gems = 5 Steps</td><td>Mediocre. Use only on day-end emergencies.</td></tr>
+    <tr><td>Mine descent: Gems → access</td><td>10 Gems gate Layer 4</td><td>Required for True Ending. Save Gems for this.</td></tr>
+  </tbody>
+</table>
+
+<h2 id="coins">Coins — Puzzle Fuel</h2>
+
+<p>Coins are the smallest stack but the most situational. They have one critical use — the <a href="puzzle-dartboard.html">Dartboard puzzle</a> requires 3 Coins to guarantee 180. Outside of that, they trickle into Vendor purchases and a few minor outcomes.</p>
+
+<h3>Coin sources</h3>
+<ul>
+  <li><strong>Bathroom</strong> — +1 Coin per visit. Stacks with Pantry adjacency.</li>
+  <li><strong>Sitting Room</strong> — +1 Coin on first visit only.</li>
+  <li><strong>Smoking Room</strong> — +1 Coin on first visit.</li>
+  <li><strong>Billiard Room reward</strong> — flat 20 Coins on first solve.</li>
+  <li><strong>Drop on draft</strong> — ~15% chance of 1-2 Coins.</li>
+</ul>
+
+<h3>Coin sinks</h3>
+<ul>
+  <li><strong>Dartboard steady-hand buff</strong> — 1 Coin per dart, 3 per puzzle attempt. Mandatory for guaranteed 180.</li>
+  <li><strong>Vendor</strong> — random items, mostly junk.</li>
+  <li><strong>Slot machine</strong> (rare room) — gambling, EV-negative.</li>
+</ul>
+
+<div class="tip-box">
+  <strong>Coin hoarding rule:</strong> Bank at least 5 Coins by day 4. The Dartboard pays out 20 Coins on first solve, which then funds future Vendor purchases for the rest of the run.
+</div>
+
+<h2 id="conversions">Conversion Map</h2>
+
+<p>The cleanest way to think about resources is the conversion graph:</p>
+
+<table class="guide-table">
+  <thead><tr><th>From</th><th>To</th><th>How</th><th>Worth It?</th></tr></thead>
+  <tbody>
+    <tr><td>Gems</td><td>Keys</td><td>Workshop, 4:1</td><td>✓ Always</td></tr>
+    <tr><td>Coins</td><td>Marksman's Pin</td><td>Dartboard, 3 Coins</td><td>✓ Once per save</td></tr>
+    <tr><td>Coins</td><td>Steps</td><td>Vendor, 2:5</td><td>~ Day-end only</td></tr>
+    <tr><td>Steps</td><td>Anything</td><td>Bedroom (full reset, but day ends)</td><td>~ Stuck-run only</td></tr>
+    <tr><td>Gems</td><td>Coins</td><td>Vendor, 3:1</td><td>✗ Skip</td></tr>
+    <tr><td>Keys</td><td>Anything</td><td>—</td><td>Keys never convert away. Use them.</td></tr>
+  </tbody>
+</table>
+
+<h2 id="daily-budget">Daily Budget Template</h2>
+
+<p>A solid daily budget for days 2-5:</p>
+
+<ul>
+  <li><strong>Steps:</strong> Open with 30. End with ≥5 (for one panic re-roll). Spend ~25.</li>
+  <li><strong>Keys:</strong> Open with 2-3, gain 2-3, spend 4-5. Net: -1 to 0 per day.</li>
+  <li><strong>Gems:</strong> Open with 0, gain 15-25, spend 4-8 at Workshop. End with 10+.</li>
+  <li><strong>Coins:</strong> Open with whatever yesterday left. Gain 2-3 per day. Spend only on Dartboard solve day.</li>
+</ul>
+
+<h2 id="faq">Resource FAQ</h2>
+
+<div class="info-box">
+  <strong>What's the most important resource?</strong>
+  Keys. They're the bottleneck. Everything else can be substituted; Keys can only be earned or crafted.
+</div>
+
+<div class="info-box">
+  <strong>Should I always craft Keys at the Workshop?</strong>
+  Yes, every day you have 4+ Gems. The 4:1 trade is the best conversion in the game.
+</div>
+
+<div class="info-box">
+  <strong>How many Coins do I need before the Dartboard?</strong>
+  3 Coins. Two is not enough — see the <a href="puzzle-dartboard.html">Dartboard guide</a>.
+</div>
+
+<div class="info-box">
+  <strong>What's the best room to start a day with?</strong>
+  Pantry-adjacent rooms. The +3 Step refund per visit pays for itself by mid-day.
+</div>
+
+<div class="info-box">
+  <strong>Do resources carry between days?</strong>
+  Keys, Gems, and Coins carry. Steps reset to 30 every morning.
+</div>
+
+<h2 id="related">Related Guides</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">Strategy</span>
+    <h3>Room Tier List</h3>
+    <p>Which rooms feed which resources. S to D rankings.</p>
+    <a href="room-tier-list.html" class="card-link">See tier list</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Strategy</span>
+    <h3>Day 1 Strategy</h3>
+    <p>How to set up your resource economy from move one.</p>
+    <a href="day-1-strategy.html" class="card-link">Plan day 1</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Strategy</span>
+    <h3>Common Mistakes</h3>
+    <p>The resource-burning errors that cost runs.</p>
+    <a href="mistakes-to-avoid.html" class="card-link">Read more</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Reference</span>
+    <h3>Items List</h3>
+    <p>Permanent items that change the economy (Pool Cue, Marksman's Pin, Brass Key).</p>
+    <a href="items-list.html" class="card-link">Item index</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">On This Page</div>
+    <ul>
+      <li><a href="#overview">Overview Table</a></li>
+      <li><a href="#steps">Steps</a></li>
+      <li><a href="#keys">Keys</a></li>
+      <li><a href="#gems">Gems</a></li>
+      <li><a href="#coins">Coins</a></li>
+      <li><a href="#conversions">Conversion Map</a></li>
+      <li><a href="#daily-budget">Daily Budget</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#related">Related Guides</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="beginner.html">Beginner</a></li>
+      <li><a href="room-46.html">Room 46</a></li>
+      <li><a href="puzzles.html">Puzzles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <p>Blue Prince Guide · Fan site, not affiliated with Dogubomb or Raw Fury.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

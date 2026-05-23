@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince 锅炉房谜题攻略 — 阀门顺序、压力表与矿洞奖励</title>
+<meta name="description" content="Blue Prince 锅炉房解法：阀门按 中 → 右 → 左 顺序拧动，最后拉链条。完整压力表读法、常见错误、以及解锁的矿洞永久 Gem 加成。">
+<meta name="keywords" content="Blue Prince 锅炉房,Blue Prince 阀门顺序,Blue Prince 锅炉,Blue Prince 压力表,Blue Prince 矿洞,Blue Prince Gem 加成">
+
+<link rel="canonical" href="https://concaxu.top/zh/puzzle-boiler-room.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/zh/puzzle-boiler-room.html">
+<meta property="og:title" content="Blue Prince 锅炉房 — 阀门顺序图解">
+<meta property="og:description" content="中→右→左，拉链条。完整解释压力表如何决定顺序，以及矿洞奖励的实际收益。">
+<meta property="og:site_name" content="Blue Prince 攻略">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/puzzle-boiler-room.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/puzzle-boiler-room.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/puzzle-boiler-room.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://concaxu.top/zh/"},{"@type":"ListItem","position":2,"name":"谜题","item":"https://concaxu.top/zh/puzzles.html"},{"@type":"ListItem","position":3,"name":"锅炉房","item":"https://concaxu.top/zh/puzzle-boiler-room.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-CN","mainEntity":[{"@type":"Question","name":"Blue Prince 锅炉房的阀门顺序是什么？","acceptedAnswer":{"@type":"Answer","text":"中、右、左。三个阀门拧好后再拉链条。注意左阀门需要拧两次。"}},{"@type":"Question","name":"为什么我一拉链条就重置？","acceptedAnswer":{"@type":"Answer","text":"链条只在三个压力表都到「低」时才生效。提前拉等于排气，谜题重启。"}},{"@type":"Question","name":"解锁锅炉房有什么奖励？","acceptedAnswer":{"@type":"Answer","text":"矿洞第三层永久 +1 Gem 加成，跨周目存档生效。"}},{"@type":"Question","name":"锅炉房是 46 号房间的必要条件吗？","acceptedAnswer":{"@type":"Answer","text":"不是。46 号房间只需要金库密码 4558 和天文台星座谜题。锅炉房是可选谜题，但矿洞 Gem 加成长期收益高。"}}]}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a>
+    <button class="menu-toggle" aria-label="切换菜单">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+        <li><a href="room-46.html">46 号房间</a></li>
+        <li><a href="puzzles.html" class="active">谜题</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../puzzle-boiler-room.html">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="puzzle-boiler-room.html" class="active">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince 锅炉房 — 阀门顺序与矿洞奖励</h1>
+<p class="article-meta">2026 年 5 月 21 日更新 · 7 分钟阅读 · 含完整剧透</p>
+
+<p>锅炉房是大多数玩家最早遇到的「机械」谜题，也是最容易被误解的一个。新手几乎都会过早地拉链条、排掉蒸汽，然后误以为这个谜题是随机的。其实并不是。顺序是 <strong>中 → 右 → 左</strong>，由每个阀门上方的压力表决定。本页解释为何这个顺序正确、错了会发生什么，以及实际能解锁什么奖励。</p>
+
+<div class="info-box">
+  <strong>解法：</strong>阀门按 <strong>中 → 右 → 左</strong> 顺序拧（左阀门需要拧两次），然后拉黄铜链条。奖励：矿洞第三层永久 +1 Gem 加成，跨周目生效。
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="diagram">阀门布局图</h2>
+
+<figure>
+<svg role="img" aria-label="锅炉房三个阀门和压力表，标示拧动顺序中右左" viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg">
+<title>锅炉房阀门顺序：中、右、左</title>
+<rect width="720" height="280" fill="#22202b" rx="8"/>
+<text x="360" y="34" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="20" font-weight="700">阀门拧动顺序</text>
+
+<g>
+  <rect x="60" y="60" width="160" height="22" fill="#3a3645" rx="3"/>
+  <rect x="60" y="60" width="140" height="22" fill="#d67878" rx="3"/>
+  <text x="140" y="76" text-anchor="middle" fill="#22202b" font-family="Georgia, serif" font-size="11" font-weight="700">压力：高</text>
+  <circle cx="140" cy="150" r="46" fill="#2a2735" stroke="#8b6fd6" stroke-width="2"/>
+  <line x1="140" y1="104" x2="140" y2="196" stroke="#a8a3b8" stroke-width="3"/>
+  <line x1="94" y1="150" x2="186" y2="150" stroke="#a8a3b8" stroke-width="3"/>
+  <text x="140" y="232" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="16" font-weight="700">左</text>
+  <text x="140" y="252" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="13">第 3 步</text>
+</g>
+
+<g>
+  <rect x="280" y="60" width="160" height="22" fill="#3a3645" rx="3"/>
+  <rect x="280" y="60" width="50" height="22" fill="#78c08a" rx="3"/>
+  <text x="360" y="76" text-anchor="middle" fill="#e8e4f0" font-family="Georgia, serif" font-size="11" font-weight="700">压力：低</text>
+  <circle cx="360" cy="150" r="46" fill="#2a2735" stroke="#b89dff" stroke-width="3"/>
+  <line x1="314" y1="150" x2="406" y2="150" stroke="#b89dff" stroke-width="3"/>
+  <text x="360" y="232" text-anchor="middle" fill="#b89dff" font-family="Georgia, serif" font-size="16" font-weight="700">中</text>
+  <text x="360" y="252" text-anchor="middle" fill="#b89dff" font-family="Georgia, serif" font-size="13">第 1 步 ✓</text>
+</g>
+
+<g>
+  <rect x="500" y="60" width="160" height="22" fill="#3a3645" rx="3"/>
+  <rect x="500" y="60" width="92" height="22" fill="#d4b572" rx="3"/>
+  <text x="580" y="76" text-anchor="middle" fill="#22202b" font-family="Georgia, serif" font-size="11" font-weight="700">压力：中</text>
+  <circle cx="580" cy="150" r="46" fill="#2a2735" stroke="#8b6fd6" stroke-width="2"/>
+  <line x1="546" y1="116" x2="614" y2="184" stroke="#a8a3b8" stroke-width="3"/>
+  <text x="580" y="232" text-anchor="middle" fill="#d4b572" font-family="Georgia, serif" font-size="16" font-weight="700">右</text>
+  <text x="580" y="252" text-anchor="middle" fill="#a8a3b8" font-family="Georgia, serif" font-size="13">第 2 步</text>
+</g>
+</svg>
+<figcaption class="article-meta">压力表「低」的阀门先拧，「中」第二，「高」第三。三个阀门都到中位后再拉链条。</figcaption>
+</figure>
+
+<h2 id="how">谜题机制</h2>
+
+<p>锅炉房在玄关大厅下方一层的地下室。房间里有三个铜质阀门安装在蒸汽管路上，每个阀门正上方有一个压力表，天花板上垂下一根黄铜链条。链条看上去像是「答案」，但其实是<strong>确认键</strong>——拉它会提交当前阀门状态。任何一个阀门处于错误位置时拉链条都会排出蒸汽、发出几秒嘶嘶声，并把三个阀门重置。</p>
+
+<p>提示在压力表里。每个表都处于三个位置之一：低（绿）、中（黄）、高（红）。谜题逻辑很简单：<strong>压力均衡化</strong>。每拧一下阀门，对应压力表降一级。所以「高」位的表需要拧三次到达「低」；「中」位需要拧两次；「低」位拧一次。</p>
+
+<p>但顺序也很关键。在另一个阀门处于「低」时拧动「高压」阀门会引起回流，把低压阀门重置回中。这就是为什么显而易见的「全部拧一次」并不奏效——必须<em>从最少压力到最多压力</em>排空，从已经接近目标的表开始。</p>
+
+<h2 id="steps">完整解法步骤</h2>
+
+<ol class="step-list">
+  <li><strong>走到中阀门。</strong>它的压力表读「低」（绿色色带窄且偏左）。顺时针拧 90 度。听到一声「咔哒」。表移到「最低」位置。</li>
+  <li><strong>移动到右阀门。</strong>压力表读「中」。顺时针拧 90 度。咔哒。表降到「低」。</li>
+  <li><strong>走到左阀门。</strong>压力表读「高」。顺时针拧 90 度。咔哒。表降到「中」。</li>
+  <li><strong>左阀门再拧一次。</strong>表降到「低」。（左阀门总共拧两次。）</li>
+  <li><strong>拉黄铜链条。</strong>整个管路嗡鸣，地下室灯闪绿光。谜题完成。</li>
+</ol>
+
+<div class="tip-box">
+  <strong>为什么左阀门要拧两次？</strong>压力表起始就是「高」，不是「中」。所有周目都是这样。拧一次只到中，必须拧到低链条才会锁定。新手经常错过这一点，因为前两个阀门各只拧一次。
+</div>
+
+<h2 id="reward">矿洞奖励 — 你实际解锁了什么</h2>
+
+<p>解决锅炉房会向矿洞发送一次确认。具体地，激活了通往矿洞第三层的暖气交换机。从下次抽卡开始，你在矿洞第三层捡到的每颗 Gem 都会<strong>多 +1 Gem</strong>。这个加成是永久的，跨周目存档全部生效，重置存档也保留。</p>
+
+<table class="guide-table">
+  <thead><tr><th>矿洞层数</th><th>原始 Gem / 次</th><th>有锅炉加成</th></tr></thead>
+  <tbody>
+    <tr><td>第 1 层（最浅）</td><td>1</td><td>1（不变）</td></tr>
+    <tr><td>第 2 层</td><td>2</td><td>2（不变）</td></tr>
+    <tr><td>第 3 层</td><td>3</td><td><strong>4</strong></td></tr>
+    <tr><td>第 4 层（地窖 — 隐藏）</td><td>5</td><td>5（不变）</td></tr>
+  </tbody>
+</table>
+
+<p>整个真结局通关流程（约 50 次跑图）下来，约多攒 30-40 颗 Gem。不算华丽，但每两个周目能换一次额外的金库尝试或紧急 Coin 购买。</p>
+
+<!-- AD: Mid -->
+<div class="ad-slot"></div>
+
+<h2 id="mistakes">常见错误</h2>
+
+<ul>
+  <li><strong>每拧一个阀门就拉链条。</strong>链条是确认，不是动作。等三个阀门都到「低」再拉。</li>
+  <li><strong>把谜题当随机的。</strong>压力表数值是固定的。你看到的不一样只是因为读错了——重新进房间冷静读。</li>
+  <li><strong>跳过左阀门第二次拧动。</strong>左从「高」起步（距离最低三步）。要拧两次，不是一次。</li>
+  <li><strong>第 1 天就尝试解锁。</strong>第 1 天的抽卡池里锅炉房很罕见。不要为了它浪费重抽。它会在第 2 天或第 3 天自然出现。</li>
+</ul>
+
+<h2 id="when">什么时候解最划算？</h2>
+
+<p>把锅炉房当作<em>机会主义</em>选择。如果它出现在你的抽卡池里、你又有相邻的地下室位置，就拿。解锁锅炉房不消耗任何资源——不需要 Key、Gem 或额外 Step。矿洞加成跨周目叠加，所以越早解越久攒，但漏一天不是灾难。</p>
+
+<p>但<em>不要</em>为了它重抽。跳过一个 Pantry 或 Library 去钓锅炉房的机会成本远高于这个加成的收益。</p>
+
+<h2 id="faq">锅炉房常见问题</h2>
+
+<div class="info-box">
+  <strong>锅炉房阀门顺序是什么？</strong>
+  中、然后右、然后左（左拧两次）。最后拉链条。
+</div>
+
+<div class="info-box">
+  <strong>为什么链条会把一切重置？</strong>
+  链条只在三个压力表全部读「低」时才生效。提前拉就是排气，谜题重启。
+</div>
+
+<div class="info-box">
+  <strong>解锁有什么奖励？</strong>
+  矿洞第三层永久 +1 Gem。跨周目存档持久保留。
+</div>
+
+<div class="info-box">
+  <strong>谜题是随机的吗？</strong>
+  不是。当前版本压力表数值和解法顺序都是固定的。
+</div>
+
+<div class="info-box">
+  <strong>是 46 号房间必要条件吗？</strong>
+  不是。只有金库和星座谜题是必要的。锅炉房是可选，但 Gem 长期收益值得做。
+</div>
+
+<h2 id="related">相关攻略</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">谜题</span>
+    <h3>金库密码 4558</h3>
+    <p>DOOR 如何映射到 4558 的完整推导，以及三封信的位置。</p>
+    <a href="puzzle-vault-code.html" class="card-link">查看推导</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">谜题</span>
+    <h3>台球室 — 三杆解法</h3>
+    <p>用连杆 combo 在三杆内打完 15 球。</p>
+    <a href="puzzle-billiard-room.html" class="card-link">查看解法</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">谜题</span>
+    <h3>星座 / 天文台</h3>
+    <p>对照床头书匹配望远镜表盘。完整对照表内附。</p>
+    <a href="puzzle-constellation.html" class="card-link">查看解法</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">参考</span>
+    <h3>所有谜题概览</h3>
+    <p>每个主要谜题在一张表里。</p>
+    <a href="puzzles.html" class="card-link">查看所有</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">本页目录</div>
+    <ul>
+      <li><a href="#diagram">阀门图解</a></li>
+      <li><a href="#how">谜题机制</a></li>
+      <li><a href="#steps">完整步骤</a></li>
+      <li><a href="#reward">矿洞奖励</a></li>
+      <li><a href="#mistakes">常见错误</a></li>
+      <li><a href="#when">什么时候解</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#related">相关攻略</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="beginner.html">新手</a></li>
+      <li><a href="room-46.html">46 号房间</a></li>
+      <li><a href="puzzles.html">谜题</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="privacy.html">隐私</a></li>
+      <li><a href="terms.html">条款</a></li>
+    </ul>
+    <p>Blue Prince 攻略 · 粉丝站点，与 Dogubomb 或 Raw Fury 无关。</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
