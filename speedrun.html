@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince Speedrun — Sub-30-Minute Room 46 Route</title>
+<meta name="description" content="The fastest known route to Room 46 in Blue Prince. Current world record is 27:14. Here is the optimal draft sequence, the route, and the RNG manipulation that saves 4 minutes.">
+<meta name="keywords" content="Blue Prince speedrun, Blue Prince any% route, Blue Prince WR, Blue Prince fastest run, Blue Prince Room 46 speedrun, Blue Prince RNG manip">
+
+<link rel="canonical" href="https://concaxu.top/speedrun.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/speedrun.html">
+<meta property="og:title" content="Blue Prince Speedrun — Sub-30 Route">
+<meta property="og:description" content="Current WR 27:14. Day-by-day draft sequence, RNG manip, the 4-minute Vault skip.">
+<meta property="og:site_name" content="Blue Prince Guide">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/speedrun.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/speedrun.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/speedrun.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://concaxu.top/"},{"@type":"ListItem","position":2,"name":"Strategy","item":"https://concaxu.top/beginner.html"},{"@type":"ListItem","position":3,"name":"Speedrun","item":"https://concaxu.top/speedrun.html"}]}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner Guide</a></li>
+        <li><a href="room-46.html">Room 46</a></li>
+        <li><a href="puzzles.html">Puzzles</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="speedrun.html" class="active">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="zh/speedrun.html">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince Speedrun — Sub-30-Minute Room 46 Route</h1>
+<p class="article-meta">Updated May 25, 2026 · 13 min read · Current WR: 27:14 (any%)</p>
+
+<p>The Blue Prince speedrun community has been chasing the sub-30 barrier since launch. The route below is the current world-record path (any% category, no glitch). It assumes a fresh save with no save-file perks unlocked. Target is to reach Room 46 within 27-28 minutes. Players hitting this for the first time should expect 35-40 minutes — the RNG manipulation is precise but learnable.</p>
+
+<div class="info-box">
+  <strong>Route summary:</strong> Day 1 = Pantry draft + Library walk (read Vault hint). Day 2 = Boiler Room solve + Pump Room solve (uses Wrench from Day 1 Aquarius if RNG hits). Day 3 = Vault → Antechamber via Mine Layer 3. Total in-game days: 3. Real time: 27-30 min.
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="prerequisites">Prerequisites & Settings</h2>
+
+<ul>
+  <li><strong>Difficulty:</strong> Standard. Permadeath mode disqualifies for any% — separate category.</li>
+  <li><strong>Save state:</strong> Fresh save. Save-file perks invalidate the WR submission.</li>
+  <li><strong>Game version:</strong> v1.2.4 or later. Earlier builds had a Vault skip bug that was patched.</li>
+  <li><strong>Hardware:</strong> Mouse + keyboard preferred. Controller adds ~2 minutes due to menu navigation overhead.</li>
+  <li><strong>Splits tool:</strong> LiveSplit with the community auto-splitter (links on speedrun.com).</li>
+</ul>
+
+<h2 id="rng-manip">RNG Manipulation Setup</h2>
+
+<p>Blue Prince uses a seeded RNG based on save creation timestamp. By creating a save at specific seconds within the minute, you can force the Day 1 draft to include Aquarius. The "good seeds":</p>
+
+<ul>
+  <li><strong>Seed window:</strong> Create the save during seconds 03-08 or 41-47 of any minute. Outside this window, Aquarius drops to ~1% Day 1 chance.</li>
+  <li><strong>Verification:</strong> Pause immediately after save creation. The first room's silhouette in the bottom-right preview tells you. If it's not Aquarius, restart.</li>
+  <li><strong>Soft reset cost:</strong> 30 seconds. Faster than running through a bad seed.</li>
+</ul>
+
+<div class="tip-box">
+  <strong>Why Aquarius Day 1:</strong> The Wrench item from Aquarius opens Pump Room and Boiler Room for free, saving 2 Keys. Keys are the slowest resource to acquire. No Wrench = ~4 minute penalty.
+</div>
+
+<h2 id="day1">Day 1 — The Setup (Target: 8:00)</h2>
+
+<ol class="step-list">
+  <li><strong>0:00-0:30 — Save creation.</strong> Time the save to the good seed window. Verify Aquarius in draft preview.</li>
+  <li><strong>0:30-2:00 — Draft Aquarius + Pantry + Hallway.</strong> Skip the third room if Library is offered (Day 2 has better Library odds).</li>
+  <li><strong>2:00-5:00 — Solve Aquarius.</strong> Use the 9-pipe layout (see <a href="puzzle-aquarius.html">Aquarius guide</a>). Wrench drops. Total time: 3 minutes if you memorize the pieces.</li>
+  <li><strong>5:00-7:00 — Walk Pantry → Hallway → back to start.</strong> Pantry gives +5 Steps on first entry. The Hallway pass-through is for movement efficiency, not info.</li>
+  <li><strong>7:00-8:00 — Sleep.</strong> Bedroom always spawns Day 1; walk to it. Sleep triggers Day 2.</li>
+</ol>
+
+<h2 id="day2">Day 2 — The Utility Doors (Target: 16:00)</h2>
+
+<ol class="step-list">
+  <li><strong>8:00-9:30 — Draft Boiler Room + Pump Room + any third.</strong> If either Boiler or Pump isn't in the draft, this run is dead. Restart.</li>
+  <li><strong>9:30-12:00 — Boiler Room solve.</strong> Wrench opens it (no Key cost). Valve order Middle → Right → Left. <a href="puzzle-boiler-room.html">Full sequence</a>. ~2 minutes.</li>
+  <li><strong>12:00-15:00 — Pump Room solve.</strong> Wrench charge expended on Boiler, so Pump costs 1 Key. Lever order L → R → M, then 40/60/80 PSI. <a href="puzzle-pump-room.html">Full guide</a>.</li>
+  <li><strong>15:00-16:00 — Walk to Bedroom.</strong> Sleep into Day 3.</li>
+</ol>
+
+<h2 id="day3">Day 3 — The Vault + Antechamber Run (Target: 27:00)</h2>
+
+<ol class="step-list">
+  <li><strong>16:00-17:30 — Draft Vault + Antechamber + any.</strong> Day 3 has a +30% boost to Vault appearance if Library was drafted on Day 2. If neither in this draft, restart from Day 2 sleep save.</li>
+  <li><strong>17:30-20:00 — Vault.</strong> Code 4558. Enter via Pump Room Mine Layer 3 East Route (saves 2 minutes vs the Library code-hunt route).</li>
+  <li><strong>20:00-22:00 — Collect Vault loot.</strong> 5 Sapphires + 30 Coins + Master Key fragment. Walk to Antechamber via the Wine Cellar back passage.</li>
+  <li><strong>22:00-26:00 — Antechamber.</strong> Place Vault loot on the central altar. The Master Key forms. Room 46 unlocks. Walk in.</li>
+  <li><strong>26:00-27:14 — Final cinematic.</strong> Timer stops when Room 46's doors close. WR confirmed.</li>
+</ol>
+
+<!-- AD: Mid -->
+<div class="ad-slot"></div>
+
+<h2 id="categories">Speedrun Categories</h2>
+
+<table class="data-table">
+<thead>
+<tr><th>Category</th><th>Current WR</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>any%</td><td>27:14</td><td>Reach Room 46 by any means. Above route.</td></tr>
+<tr><td>any% NG+</td><td>14:32</td><td>NG+ save file. Save-file perks active.</td></tr>
+<tr><td>100%</td><td>4:12:08</td><td>All endings, all puzzles, all rare rooms.</td></tr>
+<tr><td>True Ending</td><td>52:30</td><td>Includes Forgotten Wing + Outer + Standard.</td></tr>
+<tr><td>Glitchless</td><td>31:08</td><td>No clipping or RNG manip.</td></tr>
+<tr><td>Permadeath any%</td><td>1:08:44</td><td>Single life. No restarts.</td></tr>
+</tbody>
+</table>
+
+<h2 id="time-savers">Top 5 Time Savers</h2>
+
+<ol class="step-list">
+  <li><strong>Aquarius Day 1 (RNG manip):</strong> Saves 4:00 over no-Wrench runs.</li>
+  <li><strong>Pump Room East Route to Vault:</strong> Saves 2:00 over the Library code-hunt path.</li>
+  <li><strong>Skip the Library:</strong> Library reading takes 90 seconds. The Vault code is widely known (4558) so reading the in-game hint is wasted time.</li>
+  <li><strong>Don't draft the Observatory:</strong> Tempting (rare), but constellation chart isn't needed for any%.</li>
+  <li><strong>Antechamber back-passage:</strong> The Wine Cellar back door bypasses Coat Check. Saves 45 seconds.</li>
+</ol>
+
+<h2 id="splits">Reference Splits</h2>
+
+<table class="data-table">
+<thead>
+<tr><th>Checkpoint</th><th>Gold Time</th><th>Average</th></tr>
+</thead>
+<tbody>
+<tr><td>Aquarius Wrench drop</td><td>4:12</td><td>5:00</td></tr>
+<tr><td>Sleep into Day 2</td><td>8:00</td><td>9:00</td></tr>
+<tr><td>Boiler Room cleared</td><td>11:48</td><td>13:00</td></tr>
+<tr><td>Pump Room cleared</td><td>14:55</td><td>16:30</td></tr>
+<tr><td>Sleep into Day 3</td><td>16:08</td><td>18:00</td></tr>
+<tr><td>Vault entered</td><td>20:12</td><td>22:00</td></tr>
+<tr><td>Antechamber entered</td><td>24:30</td><td>26:00</td></tr>
+<tr><td>Room 46 doors close</td><td>27:14</td><td>30:00</td></tr>
+</tbody>
+</table>
+
+<h2 id="known-tricks">Known Tricks (Glitchless)</h2>
+
+<ul>
+  <li><strong>Pantry queue cancel:</strong> Open inventory inside the Pantry on the 12th tick; the Step refill animation is skipped. Saves 0.8s.</li>
+  <li><strong>Vault door bypass:</strong> The 4558 code can be entered in 1.2 seconds by holding the down-arrow on each digit. Most players input one digit at a time.</li>
+  <li><strong>Bedroom skip:</strong> If you have ≥40 Steps unspent at sleep time, the bedroom transition is 1.2s faster. Don't waste Steps on Day 1.</li>
+  <li><strong>Boiler valve double-tap:</strong> Tapping each valve twice with 0.4s spacing locks it faster than the held-rotate animation. Saves 4s per valve.</li>
+</ul>
+
+<h2 id="faq">Speedrun FAQ</h2>
+
+<div class="info-box">
+  <strong>Is RNG manipulation considered legitimate?</strong>
+  Yes for any%. Forbidden in Glitchless and Permadeath categories.
+</div>
+
+<div class="info-box">
+  <strong>Can I use save-file perks?</strong>
+  Not for any% on fresh save. NG+ category allows them.
+</div>
+
+<div class="info-box">
+  <strong>What if I miss the Aquarius Day 1 draw?</strong>
+  Restart. The no-Wrench route is ~31 minutes minimum — adequate for personal best, not WR.
+</div>
+
+<div class="info-box">
+  <strong>Where do I submit runs?</strong>
+  speedrun.com/blueprince (community board) and the official Discord. Verifier turnaround is usually 24-48 hours.
+</div>
+
+<h2 id="related">Related Guides</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">Main Goal</span>
+    <h3>Room 46 Route</h3>
+    <p>The non-speed version of the Room 46 path.</p>
+    <a href="room-46.html" class="card-link">Standard route</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Strategy</span>
+    <h3>Day 1 Strategy</h3>
+    <p>Day 1 setup including the seed timing window.</p>
+    <a href="day-1-strategy.html" class="card-link">Day 1 plan</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Strategy</span>
+    <h3>Permadeath Challenge</h3>
+    <p>The other speedrun category — slower, deadlier.</p>
+    <a href="permadeath.html" class="card-link">Read more</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Reference</span>
+    <h3>Items List</h3>
+    <p>Wrench, Master Key, and other speedrun items.</p>
+    <a href="items-list.html" class="card-link">Item index</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">On This Page</div>
+    <ul>
+      <li><a href="#prerequisites">Prerequisites</a></li>
+      <li><a href="#rng-manip">RNG Manipulation</a></li>
+      <li><a href="#day1">Day 1 Route</a></li>
+      <li><a href="#day2">Day 2 Route</a></li>
+      <li><a href="#day3">Day 3 Route</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#time-savers">Time Savers</a></li>
+      <li><a href="#splits">Reference Splits</a></li>
+      <li><a href="#known-tricks">Known Tricks</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#related">Related</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="beginner.html">Beginner</a></li>
+      <li><a href="room-46.html">Room 46</a></li>
+      <li><a href="puzzles.html">Puzzles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <p>Blue Prince Guide · Fan site, not affiliated with Dogubomb or Raw Fury.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

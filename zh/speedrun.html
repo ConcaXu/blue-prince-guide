@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince 速通 — 30 分钟内到达 Room 46 的路线</title>
+<meta name="description" content="Blue Prince 已知最快到 Room 46 路线。当前世界纪录 27:14。本文给出最优抽取序列、路线和省 4 分钟的 RNG 操作。">
+<meta name="keywords" content="Blue Prince 速通,Blue Prince any% 路线,Blue Prince WR,Blue Prince 最快,Blue Prince Room 46 速通,Blue Prince RNG 操作">
+
+<link rel="canonical" href="https://concaxu.top/zh/speedrun.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/zh/speedrun.html">
+<meta property="og:title" content="Blue Prince 速通 — 30 分钟以内路线">
+<meta property="og:description" content="当前 WR 27:14。日程抽取序列、RNG 操作、4 分钟金库跳过。">
+<meta property="og:site_name" content="Blue Prince 攻略">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/speedrun.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/speedrun.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/speedrun.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://concaxu.top/zh/"},{"@type":"ListItem","position":2,"name":"策略","item":"https://concaxu.top/zh/beginner.html"},{"@type":"ListItem","position":3,"name":"速通","item":"https://concaxu.top/zh/speedrun.html"}]}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a>
+    <button class="menu-toggle" aria-label="切换菜单">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+        <li><a href="room-46.html">46 号房间</a></li>
+        <li><a href="puzzles.html">谜题</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../speedrun.html">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="speedrun.html" class="active">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince 速通 — 30 分钟以内到达 Room 46</h1>
+<p class="article-meta">2026 年 5 月 25 日更新 · 13 分钟阅读 · 当前 WR: 27:14 (any%)</p>
+
+<p>Blue Prince 速通社区自发售以来追逐 30 分钟以下纪录。下面是当前世界纪录路线（any% 分类，无 glitch）。假设新存档无永久加成。目标 27-28 分钟到 Room 46。首次尝试预期 35-40 分钟——RNG 操作精确但可学。</p>
+
+<div class="info-box">
+  <strong>路线概要：</strong>Day 1 = 储藏室抽取+图书馆步行（读金库提示）。Day 2 = 锅炉室解+泵房解（如 RNG 命中则用 Day 1 Aquarius 扳手）。Day 3 = 金库→前厅经矿井三层。总游戏天数：3。实时：27-30 分钟。
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="prerequisites">前提与设置</h2>
+
+<ul>
+  <li><strong>难度：</strong>标准。Permadeath 模式不合 any% 资格——独立分类。</li>
+  <li><strong>存档状态：</strong>新存档。永久加成使 WR 提交无效。</li>
+  <li><strong>游戏版本：</strong>v1.2.4 或更新。早期版本有已修复的金库跳过 bug。</li>
+  <li><strong>硬件：</strong>鼠标+键盘优先。手柄因菜单导航开销多约 2 分钟。</li>
+  <li><strong>分段工具：</strong>LiveSplit 加社区自动分段器（speedrun.com 有链接）。</li>
+</ul>
+
+<h2 id="rng-manip">RNG 操作设置</h2>
+
+<p>Blue Prince 使用基于存档创建时间戳的种子化 RNG。在分钟特定秒数创建存档可强制 Day 1 抽取包含 Aquarius。「好种子」：</p>
+
+<ul>
+  <li><strong>种子窗口：</strong>在任意分钟的秒数 03-08 或 41-47 之间创建存档。窗口外 Aquarius Day 1 概率降至 ~1%。</li>
+  <li><strong>验证：</strong>存档创建后立即暂停。右下抽取预览的首房间轮廓告诉你。如不是 Aquarius 则重置。</li>
+  <li><strong>软重置成本：</strong>30 秒。比跑完坏种子快。</li>
+</ul>
+
+<div class="tip-box">
+  <strong>为什么 Day 1 要 Aquarius：</strong>扳手物品免费开泵房和锅炉室，省 2 把 Key。Key 是获取最慢的资源。无扳手 = ~4 分钟惩罚。
+</div>
+
+<h2 id="day1">Day 1 — 设置（目标：8:00）</h2>
+
+<ol class="step-list">
+  <li><strong>0:00-0:30 — 存档创建。</strong>时间存档到好种子窗口。验证抽取预览中的 Aquarius。</li>
+  <li><strong>0:30-2:00 — 抽 Aquarius+储藏室+走廊。</strong>第三个房间若有图书馆则跳过（Day 2 有更好图书馆几率）。</li>
+  <li><strong>2:00-5:00 — 解 Aquarius。</strong>用 9 管布局（见<a href="puzzle-aquarius.html">Aquarius 攻略</a>）。扳手掉落。3 分钟，前提你记得管段。</li>
+  <li><strong>5:00-7:00 — 走储藏室→走廊→回起点。</strong>储藏室首次进入给 +5 Step。</li>
+  <li><strong>7:00-8:00 — 睡觉。</strong>卧室 Day 1 总会出现；走到那。睡觉触发 Day 2。</li>
+</ol>
+
+<h2 id="day2">Day 2 — 实用门（目标：16:00）</h2>
+
+<ol class="step-list">
+  <li><strong>8:00-9:30 — 抽锅炉室+泵房+任意第三个。</strong>缺锅炉或泵则 run 已死。重置。</li>
+  <li><strong>9:30-12:00 — 锅炉室解。</strong>扳手开它（无 Key 成本）。阀门顺序中→右→左。</li>
+  <li><strong>12:00-15:00 — 泵房解。</strong>扳手充能用于锅炉，泵房需 1 Key。扳杆顺序 L→R→M，然后 40/60/80 PSI。</li>
+  <li><strong>15:00-16:00 — 走到卧室。</strong>睡入 Day 3。</li>
+</ol>
+
+<h2 id="day3">Day 3 — 金库+前厅 run（目标：27:00）</h2>
+
+<ol class="step-list">
+  <li><strong>16:00-17:30 — 抽金库+前厅+任意。</strong>Day 3 有 +30% 金库出现提升（如 Day 2 抽过图书馆）。本抽两者都不在则从 Day 2 睡觉存档重置。</li>
+  <li><strong>17:30-20:00 — 金库。</strong>密码 4558。经泵房矿井三层东路进入（比图书馆密码搜寻路线省 2 分钟）。</li>
+  <li><strong>20:00-22:00 — 收金库战利品。</strong>5 蓝宝石+30 Coin+万能钥匙碎片。经酒窖后通道走到前厅。</li>
+  <li><strong>22:00-26:00 — 前厅。</strong>把金库战利品放中央祭坛。万能钥匙成形。Room 46 解锁。走入。</li>
+  <li><strong>26:00-27:14 — 最终动画。</strong>计时器在 Room 46 门关上时停。WR 确认。</li>
+</ol>
+
+<!-- AD: Mid -->
+<div class="ad-slot"></div>
+
+<h2 id="categories">速通分类</h2>
+
+<table class="data-table">
+<thead><tr><th>分类</th><th>当前 WR</th><th>描述</th></tr></thead>
+<tbody>
+<tr><td>any%</td><td>27:14</td><td>用任意方式达到 Room 46。上述路线。</td></tr>
+<tr><td>any% NG+</td><td>14:32</td><td>NG+ 存档。永久加成激活。</td></tr>
+<tr><td>100%</td><td>4:12:08</td><td>所有结局、所有谜题、所有稀有房间。</td></tr>
+<tr><td>真结局</td><td>52:30</td><td>含遗忘之翼+外环+标准。</td></tr>
+<tr><td>无 glitch</td><td>31:08</td><td>无裁剪或 RNG 操作。</td></tr>
+<tr><td>Permadeath any%</td><td>1:08:44</td><td>单条命。无重启。</td></tr>
+</tbody>
+</table>
+
+<h2 id="time-savers">前 5 大省时</h2>
+
+<ol class="step-list">
+  <li><strong>Aquarius Day 1（RNG 操作）：</strong>比无扳手 run 省 4:00。</li>
+  <li><strong>泵房东路到金库：</strong>比图书馆密码搜寻路线省 2:00。</li>
+  <li><strong>跳过图书馆：</strong>图书馆阅读耗 90 秒。金库密码人尽皆知（4558），读游戏内提示是浪费时间。</li>
+  <li><strong>不抽观星台：</strong>诱人（稀有），但 any% 不需星座图。</li>
+  <li><strong>前厅后通道：</strong>酒窖后门绕过寄物处。省 45 秒。</li>
+</ol>
+
+<h2 id="splits">参考分段</h2>
+
+<table class="data-table">
+<thead><tr><th>检查点</th><th>金时间</th><th>平均</th></tr></thead>
+<tbody>
+<tr><td>Aquarius 扳手掉</td><td>4:12</td><td>5:00</td></tr>
+<tr><td>睡入 Day 2</td><td>8:00</td><td>9:00</td></tr>
+<tr><td>锅炉室清</td><td>11:48</td><td>13:00</td></tr>
+<tr><td>泵房清</td><td>14:55</td><td>16:30</td></tr>
+<tr><td>睡入 Day 3</td><td>16:08</td><td>18:00</td></tr>
+<tr><td>进金库</td><td>20:12</td><td>22:00</td></tr>
+<tr><td>进前厅</td><td>24:30</td><td>26:00</td></tr>
+<tr><td>Room 46 门关</td><td>27:14</td><td>30:00</td></tr>
+</tbody>
+</table>
+
+<h2 id="known-tricks">已知技巧（无 glitch）</h2>
+
+<ul>
+  <li><strong>储藏室队列取消：</strong>在储藏室第 12 tick 打开背包；Step 补足动画跳过。省 0.8 秒。</li>
+  <li><strong>金库门绕过：</strong>4558 可按住每位下箭头在 1.2 秒输入。多数玩家逐位输。</li>
+  <li><strong>卧室跳过：</strong>睡眠时 Step ≥40 时卧室转场快 1.2 秒。Day 1 不要浪费 Step。</li>
+  <li><strong>锅炉阀门双击：</strong>每阀门以 0.4 秒间距点两次比按住旋转动画快。每阀省 4 秒。</li>
+</ul>
+
+<h2 id="faq">速通常见问题</h2>
+
+<div class="info-box"><strong>RNG 操作合法吗？</strong>any% 是。无 glitch 和 Permadeath 分类禁止。</div>
+
+<div class="info-box"><strong>能用永久加成吗？</strong>新存档 any% 不行。NG+ 分类允许。</div>
+
+<div class="info-box"><strong>错过 Day 1 Aquarius 怎么办？</strong>重置。无扳手路线最少 ~31 分钟——适合个人最佳，不适合 WR。</div>
+
+<div class="info-box"><strong>哪里提交 run？</strong>speedrun.com/blueprince（社区板）和官方 Discord。验证周转通常 24-48 小时。</div>
+
+<h2 id="related">相关攻略</h2>
+
+<div class="card-grid">
+  <article class="card"><span class="card-tag">主线</span><h3>Room 46 路线</h3><p>非速通版的 Room 46 路线。</p><a href="room-46.html" class="card-link">标准路线</a></article>
+  <article class="card"><span class="card-tag">策略</span><h3>Day 1 策略</h3><p>含种子时机窗口的 Day 1 设置。</p><a href="day-1-strategy.html" class="card-link">Day 1 规划</a></article>
+  <article class="card"><span class="card-tag">策略</span><h3>Permadeath 挑战</h3><p>另一速通分类——更慢、更致命。</p><a href="permadeath.html" class="card-link">阅读更多</a></article>
+  <article class="card"><span class="card-tag">参考</span><h3>物品清单</h3><p>扳手、万能钥匙等速通物品。</p><a href="items-list.html" class="card-link">物品索引</a></article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">本页目录</div>
+    <ul>
+      <li><a href="#prerequisites">前提</a></li>
+      <li><a href="#rng-manip">RNG 操作</a></li>
+      <li><a href="#day1">Day 1 路线</a></li>
+      <li><a href="#day2">Day 2 路线</a></li>
+      <li><a href="#day3">Day 3 路线</a></li>
+      <li><a href="#categories">分类</a></li>
+      <li><a href="#time-savers">省时</a></li>
+      <li><a href="#splits">分段</a></li>
+      <li><a href="#known-tricks">技巧</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#related">相关</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="beginner.html">新手指南</a></li>
+      <li><a href="room-46.html">46 号房间</a></li>
+      <li><a href="puzzles.html">谜题</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="privacy.html">隐私</a></li>
+      <li><a href="terms.html">条款</a></li>
+    </ul>
+    <p>Blue Prince 攻略 · 粉丝站点，与 Dogubomb 及 Raw Fury 无关联。</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

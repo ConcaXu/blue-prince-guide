@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince Aquarius 水管布线攻略 — 11 管最优解与扳手</title>
+<meta name="description" content="Blue Prince Aquarius 房间是水管布线谜题：用有限管段从水源连接三个出水口。本文给出最优 11 管布局、旋转技巧和隐藏奖励扳手物品。">
+<meta name="keywords" content="Blue Prince Aquarius,Blue Prince 水管,Blue Prince 管道,Blue Prince 扳手,Blue Prince 流体,Blue Prince 水源">
+
+<link rel="canonical" href="https://concaxu.top/zh/puzzle-aquarius.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/zh/puzzle-aquarius.html">
+<meta property="og:title" content="Blue Prince Aquarius — 水管布线攻略">
+<meta property="og:description" content="11 管最优布局，扳手物品掉落，三个出水口全部连接。">
+<meta property="og:site_name" content="Blue Prince 攻略">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/puzzle-aquarius.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/puzzle-aquarius.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/puzzle-aquarius.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://concaxu.top/zh/"},{"@type":"ListItem","position":2,"name":"谜题","item":"https://concaxu.top/zh/puzzles.html"},{"@type":"ListItem","position":3,"name":"Aquarius","item":"https://concaxu.top/zh/puzzle-aquarius.html"}]}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a>
+    <button class="menu-toggle" aria-label="切换菜单">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+        <li><a href="room-46.html">46 号房间</a></li>
+        <li><a href="puzzles.html" class="active">谜题</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../puzzle-aquarius.html">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="puzzle-aquarius.html" class="active">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince Aquarius — 水管布线与扳手</h1>
+<p class="article-meta">2026 年 5 月 25 日更新 · 9 分钟阅读 · 含 11 管最优布局</p>
+
+<p>Aquarius 房间看起来吓人，因为地板是 5×5 的空管座阵列，旁边箱子里堆着混乱的管段。其实这是个一源三汇的流体谜题，被杂物掩盖了结构。看清结构后两分钟内解出——而<strong>11 管最优布局奖励扳手物品</strong>，免费打开庄园所有锁定的实用门。</p>
+
+<div class="info-box">
+  <strong>解法概览：</strong>水源在南墙中央。三个出水口：花园（东）、浴室（北）、水库（西）。布线：南边法兰 → T 接头 → 东到花园 + 北到浴室 → 浴室西到水库。用 4 直管、5 弯头、1 T 接头、1 十字管。总 11 段，箱中剩 1 段。
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="grid">5×5 管座阵列</h2>
+
+<p>地板是 5×5 的空管座。水源在南墙中央格，三个出水口分别在东墙中央（花园）、北墙中央（浴室）、西墙中央（水库）。箱子在地板东南角。</p>
+
+<h2 id="pieces">箱子内容</h2>
+
+<p>地板旁的木箱有 12 段管：</p>
+
+<ul>
+  <li><strong>4 段直管</strong>——单线，两端法兰 180°</li>
+  <li><strong>5 段弯头管（L 形）</strong>——两法兰 90°</li>
+  <li><strong>2 段 T 接头</strong>——三法兰，两个与第三个垂直</li>
+  <li><strong>1 段十字管（X 形）</strong>——四法兰</li>
+</ul>
+
+<p>最优解用 12 中的 11 段。剩下 1 段（通常一根直管）。</p>
+
+<h2 id="layout">11 管最优布局</h2>
+
+<ol class="step-list">
+  <li><strong>位置 1（水源南法兰）：</strong>直管，竖向。连接水源。</li>
+  <li><strong>位置 2（往上一格）：</strong>直管，竖向。向上输流。</li>
+  <li><strong>位置 T（阵列中心）：</strong>T 接头。东法兰 → 花园线。西法兰 → 水库线。北法兰 → 浴室线。</li>
+  <li><strong>位置 3, 4：</strong>两段直管从 T 西向延伸到水库。</li>
+  <li><strong>位置 5, 6：</strong>两段直管从 T 东向延伸到花园。</li>
+  <li><strong>位置 7, 8：</strong>两段直管从 T 北向延伸到浴室。</li>
+</ol>
+
+<div class="tip-box">
+  <strong>隐藏的旋转：</strong>水源法兰朝<em>北</em>，所以位置 1 必须从<em>南</em>接收水。如果你的第一管南法兰开、北法兰关，水不会进。把第一根直管旋转使两端竖向法兰都开（直管默认旋转正确——但弯头默认 NE 是错的）。
+</div>
+
+<h2 id="rewards">扳手物品奖励</h2>
+
+<p>用 11 管最优布局填满三个出水口后，扳手掉落于水源管口：</p>
+
+<ul>
+  <li><strong>效果：</strong>锁定的实用门（锅炉室、泵房、维修房）不消耗 Key 即可打开。</li>
+  <li><strong>持久：</strong>扳手在使用前跨死亡保留。使用后碎裂。</li>
+  <li><strong>叠加：</strong>不叠加。每存档同时只能持有一把扳手。</li>
+</ul>
+
+<p>非最优解（12 管，或三个出水口都填满但用了多余段）只掉 8 Coin。扳手才是真正奖励，需要 11 管或更少。</p>
+
+<!-- AD: Mid -->
+<div class="ad-slot"></div>
+
+<h2 id="speedrun">速通的 9 管布局</h2>
+
+<p>速通玩家用更紧凑的 9 管布局，以十字管替代 T 接头：</p>
+
+<ol class="step-list">
+  <li>水源处 1 段直管（阵列南）。</li>
+  <li>1 段弯头将东向转北向。</li>
+  <li>1 段十字管在阵列中心——四法兰都激活。</li>
+  <li>2 段直管东向到花园。</li>
+  <li>2 段直管西向到水库。</li>
+  <li>1 段直管北向到浴室，再 1 段弯头收尾浴室连接。</li>
+</ol>
+
+<p>9 管变体仍然掉扳手（任何 ≤11 管布局都合格），每 run 节省 12 秒摆放时间。</p>
+
+<h2 id="mistakes">常见错误</h2>
+
+<ul>
+  <li><strong>只填两个出水口。</strong>两源解不掉扳手、无加成、Coin 收益减半。谜题要求三个全填。</li>
+  <li><strong>弯头旋转错误。</strong>弯头默认 NE。通常需要 NW、SE、SW。点击管段旋转。</li>
+  <li><strong>把 T 接头放在水源。</strong>水源已有一个法兰。T 在位置 1 浪费一个法兰方向。把 T 放阵列中心。</li>
+  <li><strong>忘记封闭十字管未用法兰。</strong>十字管四法兰。若一法兰指向空地，水会溢出，出水口不会满。十字管仅在四法兰都接邻段时使用。</li>
+</ul>
+
+<h2 id="faq">Aquarius 常见问题</h2>
+
+<div class="info-box">
+  <strong>能撤销摆放吗？</strong>能。右击任意已放管段返回箱中。无惩罚。
+</div>
+
+<div class="info-box">
+  <strong>有时间限制吗？</strong>无计时器。想多久就多久——可以离开房间当日返回。
+</div>
+
+<div class="info-box">
+  <strong>花园、浴室、水库实际给什么水？</strong>装饰性。花园让庄园草坪变绿（在阳光房可见）。浴室填满楼上浴缸（女佣会提到）。水库纯粹为了谜题。
+</div>
+
+<div class="info-box">
+  <strong>扳手能替代万能钥匙吗？</strong>不能。万能钥匙开任何门。扳手仅对实用门，用后消耗。不同工具。
+</div>
+
+<h2 id="related">相关攻略</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">谜题</span>
+    <h3>泵房 — 压力表</h3>
+    <p>另一个实用谜题。需要扳手免费进入。</p>
+    <a href="puzzle-pump-room.html" class="card-link">查看攻略</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">参考</span>
+    <h3>物品清单</h3>
+    <p>扳手、万能钥匙等实用工具。</p>
+    <a href="items-list.html" class="card-link">物品索引</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">策略</span>
+    <h3>资源经济</h3>
+    <p>扳手每 run 节省 4-6 Key。</p>
+    <a href="resource-economy.html" class="card-link">阅读更多</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">参考</span>
+    <h3>全部谜题</h3>
+    <p>Aquarius 和其他 12 个谜题。</p>
+    <a href="puzzles.html" class="card-link">查看全部</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">本页目录</div>
+    <ul>
+      <li><a href="#grid">管座阵列</a></li>
+      <li><a href="#pieces">箱子内容</a></li>
+      <li><a href="#layout">最优布局</a></li>
+      <li><a href="#rewards">扳手奖励</a></li>
+      <li><a href="#speedrun">9 管变体</a></li>
+      <li><a href="#mistakes">常见错误</a></li>
+      <li><a href="#faq">常见问题</a></li>
+      <li><a href="#related">相关攻略</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="beginner.html">新手指南</a></li>
+      <li><a href="room-46.html">46 号房间</a></li>
+      <li><a href="puzzles.html">谜题</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="privacy.html">隐私</a></li>
+      <li><a href="terms.html">条款</a></li>
+    </ul>
+    <p>Blue Prince 攻略 · 粉丝站点，与 Dogubomb 及 Raw Fury 无关联。</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
