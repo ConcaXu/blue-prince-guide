@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince RNG Guide — How to Deal with Bad Luck Runs</title>
+<meta name="description" content="Struggling with bad RNG in Blue Prince? Learn why 'bad luck' runs still move you forward, how to thin the draft pool, which permanent upgrades reduce variance, and when to end a run early.">
+<meta name="keywords" content="Blue Prince RNG, Blue Prince bad luck, Blue Prince random, Blue Prince draft tips, Blue Prince dead ends, Blue Prince permanent upgrades, Blue Prince variance, Blue Prince run strategy">
+
+<link rel="canonical" href="https://concaxu.top/rng-guide.html">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/rng-guide.html">
+<meta property="og:title" content="Blue Prince RNG Guide — Embrace the Randomness, Reduce the Variance">
+<meta property="og:description" content="Why bad runs still make you better, how to thin the draft pool, and which unlocks reduce RNG dependency.">
+<meta property="og:site_name" content="Blue Prince Guide">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/rng-guide.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/rng-guide.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/rng-guide.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://concaxu.top/"},{"@type":"ListItem","position":2,"name":"RNG Guide","item":"https://concaxu.top/rng-guide.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is Blue Prince too random?","acceptedAnswer":{"@type":"Answer","text":"RNG determines which rooms appear in your draft, but it does not determine puzzle solutions — those are fixed. Bad draft luck means you can't reach a specific room on that run. The key mindset shift is to pursue whatever the run offers rather than forcing a specific path."}},
+{"@type":"Question","name":"How do I improve my drafts in Blue Prince?","acceptedAnswer":{"@type":"Answer","text":"Draft dead-end rooms early in a run. Every dead end you draft gets removed from the draw pool for that run, which means fewer wasted draws at high ranks where multi-exit rooms matter most. Also, unlock the Drafting Studio to permanently add reliable room blueprints to your pool."}},
+{"@type":"Question","name":"When should I give up a run?","acceptedAnswer":{"@type":"Answer","text":"A run is worth ending early when you have genuinely nothing to pursue — no unsolved puzzles accessible, no new rooms to discover, and insufficient resources to reach higher ranks. However, most players end runs too early. Even a seemingly dead run often has one useful room still in reach."}},
+{"@type":"Question","name":"What permanently reduces RNG variance in Blue Prince?","acceptedAnswer":{"@type":"Answer","text":"Unlocking the Drafting Studio, finding new room blueprints, and upgrading key rooms all reduce variance over time. Each new blueprint you add to the deck gives you more control over the draft pool. The Coat Check lets you store key items between runs, further reducing per-run RNG dependency."}}
+]}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> Guide</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner Guide</a></li>
+        <li><a href="room-46.html">Room 46</a></li>
+        <li><a href="puzzles.html">Puzzles</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="rng-guide.html" class="active">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="zh/rng-guide.html">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>Blue Prince RNG Guide — Dealing with Bad Luck</h1>
+<p class="article-meta">Updated May 2026 · 10 min read · The most common source of player frustration, explained</p>
+
+<p>RNG is the most-complained-about aspect of Blue Prince, and it's also one of the most misunderstood. Players frequently abandon runs because "the rooms aren't cooperating" — then quit the session feeling like they've wasted time. This guide explains what RNG actually controls, what it doesn't, and how to make every run productive regardless of the draft.</p>
+
+<div class="info-box">
+  <strong>The core reframe:</strong> RNG controls which rooms appear in your draft. It does not control puzzle solutions, cipher keys, or lore — those are fixed. A "bad luck" run is a run where you can't pursue your current main goal. It's also a run where you can pursue something else.
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="what-rng-controls">What RNG Actually Controls</h2>
+
+<p>The randomness in Blue Prince is specifically about the <strong>room draft pool</strong>. When you open a door, three rooms are drawn from the available pool. That draw is random. What is <em>not</em> random:</p>
+
+<ul>
+  <li>Puzzle solutions — every cipher, code, and mechanism has a fixed solution</li>
+  <li>Room contents — when a room appears, it always has the same items, documents, and puzzles</li>
+  <li>Permanent unlocks — anything you've unlocked through the Drafting Studio stays unlocked</li>
+  <li>Saved items — anything stored in the Coat Check persists into the next run</li>
+</ul>
+
+<p>This distinction matters. When you say "I had bad luck today," what actually happened is: the specific rooms you needed for your current plan didn't appear in your draft. Your knowledge, your unlocks, and your stored items are all intact. The next run starts with the same accumulated progress.</p>
+
+<h2 id="mindset">The Mindset Shift</h2>
+
+<p>Most players approach Blue Prince with a <strong>single current objective</strong>: "today I'm getting the Basement Key" or "today I'm reaching the Observatory." When RNG doesn't cooperate with that objective, the run feels wasted.</p>
+
+<p>Experienced players think in terms of <strong>multiple open threads</strong>. At any given point in the game, there are five to fifteen unsolved puzzles that you have partial information on. A run that doesn't give you the Observatory might give you the Billiard Room, the Conservatory, and the Workshop — all rooms with puzzles you haven't fully explored. Following whatever the run offers is more efficient than repeatedly forcing the same path.</p>
+
+<p>The game's designer has stated directly that players should <strong>juggle multiple clues and mysteries in parallel</strong> rather than treating the game as a linear sequence of objectives. A run that teaches you something new is a good run, even if it doesn't advance your primary goal.</p>
+
+<h2 id="thin-pool">How to Thin the Draft Pool</h2>
+
+<p>The most effective mechanical technique for improving your drafts at high ranks is <strong>drafting dead-end rooms early</strong>.</p>
+
+<p>Here's why it works: Every room you draft in a run is removed from the pool for that run. Dead-end rooms (rooms with only one door, facing inward) are frequent in the early-rank draw pool. If you skip them at Rank 1–3, they remain in the pool and can appear at Rank 6–9 when you desperately need multi-exit rooms for progression.</p>
+
+<p>By deliberately drafting dead-end rooms early:</p>
+<ul>
+  <li>You remove them from the pool for the rest of that run</li>
+  <li>Higher-rank draws have a higher concentration of the rooms you actually want</li>
+  <li>Dead-end rooms often contain useful resources (gems, coins, items) as compensation</li>
+</ul>
+
+<div class="info-box">
+  <strong>Counter-intuitive but confirmed:</strong> Drafting "bad" rooms early is one of the highest-leverage RNG strategies in the game. Many players avoid dead ends, which is the opposite of what helps.
+</div>
+
+<h2 id="permanent-upgrades">Permanent Upgrades That Reduce Variance</h2>
+
+<p>As you play more runs, certain permanent unlocks directly reduce how much RNG affects your outcomes:</p>
+
+<h3 id="drafting-studio">Drafting Studio Blueprints</h3>
+<p>Every new room blueprint you find and add to your Drafting Studio expands your pool with rooms you know the contents of. A larger pool of known rooms means fewer surprise draws that derail your plans. Prioritize finding blueprints for rooms that are critical to your current objectives.</p>
+
+<h3 id="coat-check">Coat Check — Item Storage</h3>
+<p>The Coat Check lets you store items between runs. If you find a key item (like the Basement Key, a specific tool, or a crafted weapon) in one run, you can store it in the Coat Check and retrieve it next run. This effectively removes the RNG of "will I find the item I need today" for stored items.</p>
+
+<h3 id="bedroom-unlocks">Bedroom Rooms — Step Recovery</h3>
+<p>Bedrooms restore steps when you sleep in them during a run. More steps mean you can explore more of the mansion per day, which means more drafts per run, which means more chances to find the rooms you need. Unlocking bedroom blueprints early pays forward for every future run.</p>
+
+<h3 id="workshop">Workshop Unlocks</h3>
+<p>The Workshop lets you combine items into more powerful tools. Once you know the recipes, having a Workshop appear in a run lets you craft your way past obstacles that would otherwise require specific rare room draws. It's a RNG bypass for several progression bottlenecks.</p>
+
+<div class="ad-slot"></div>
+
+<h2 id="multi-thread">Running Multiple Puzzle Threads</h2>
+
+<p>The practical way to never have a "wasted" run is to maintain a list of active puzzle threads. After each session, look at your notes and identify:</p>
+
+<ol>
+  <li><strong>Puzzles with enough information to solve now</strong> — if you have the cipher key and the encoded message, solve it</li>
+  <li><strong>Puzzles where you need one more piece</strong> — these are your primary targets for the next run</li>
+  <li><strong>Puzzles where you've seen the room but don't understand the mechanic yet</strong> — revisit and observe more carefully</li>
+  <li><strong>Rooms you've heard about but never seen</strong> — these are exploration targets</li>
+</ol>
+
+<p>With four active threads, any run that gives you even one relevant room is a productive run. The days when you get three or four relevant rooms are exceptionally good runs — and they happen more often than you'd expect once your pool is well-stocked with unlocked blueprints.</p>
+
+<h2 id="when-to-end">When to End a Run Early</h2>
+
+<p>Ending a run early (sleeping before running out of steps) preserves your step investment for the next run. It's worth ending early when:</p>
+
+<ul>
+  <li>You have no unsolved rooms accessible with remaining steps</li>
+  <li>You've stored your key items in the Coat Check and there's nothing left to pursue</li>
+  <li>Your step count is too low to reach the ranks where your target rooms appear</li>
+</ul>
+
+<p>However, <strong>most players end runs too early</strong>. Before sleeping, check:</p>
+<ul>
+  <li>Are there any rooms in your current layout you haven't fully explored?</li>
+  <li>Is there a dead-end room at Rank 3 you skipped that might have a useful item?</li>
+  <li>Is there a Shop room accessible that could sell something worth storing?</li>
+</ul>
+
+<h2 id="faq">FAQ</h2>
+
+<div class="info-box">
+  <strong>I've played 20 runs and still haven't seen the room I need. Is something wrong?</strong><br>
+  Some rare rooms genuinely have low draw rates — particularly Unusual and Rare tier rooms. Check the Room Directory (accessible from the menu) to see the rarity tier of the room you're looking for. Rare rooms might appear once every 5–10 runs even with good play. This is normal. The solution is to expand what you're working on in parallel.
+</div>
+
+<div class="info-box">
+  <strong>Does restarting a run reroll the RNG?</strong><br>
+  Starting a new day (sleeping and beginning fresh) generates a new random seed for the draft pool. There is no "reroll" within a single run — the pool is set when the day begins. Some players try to "fish" for better draws by repeatedly opening and closing a door, but the draw is committed on the first interaction.
+</div>
+
+<div class="info-box">
+  <strong>Is there a way to guarantee a specific room appears?</strong><br>
+  No guaranteed way, but you can influence probability. High-rarity rooms appear more frequently at high ranks (Ranks 7–9). Thinning the pool by drafting dead ends increases the relative probability of seeing specific rooms. And certain permanent upgrades can influence which rooms are weighted more heavily.
+</div>
+
+<h2 id="related">Related Guides</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">New Player</span>
+    <h3>Beginner's Guide</h3>
+    <p>The drafting system, rarity tiers, and daily resources explained.</p>
+    <a href="beginner.html" class="card-link">Start here</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Strategy</span>
+    <h3>How to Take Notes</h3>
+    <p>Track clues across sessions so bad-luck runs still build progress.</p>
+    <a href="note-taking.html" class="card-link">Read guide</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Strategy</span>
+    <h3>Resource Economy</h3>
+    <p>Gems, keys, steps — how to allocate resources across a run.</p>
+    <a href="resource-economy.html" class="card-link">Read guide</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">Endgame</span>
+    <h3>Room 46</h3>
+    <p>The full path to your first ending.</p>
+    <a href="room-46.html" class="card-link">Walkthrough</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">On This Page</div>
+    <ul>
+      <li><a href="#what-rng-controls">What RNG Controls</a></li>
+      <li><a href="#mindset">Mindset Shift</a></li>
+      <li><a href="#thin-pool">Thinning the Pool</a></li>
+      <li><a href="#permanent-upgrades">Permanent Upgrades</a></li>
+      <li><a href="#drafting-studio">Drafting Studio</a></li>
+      <li><a href="#coat-check">Coat Check</a></li>
+      <li><a href="#multi-thread">Multiple Puzzle Threads</a></li>
+      <li><a href="#when-to-end">When to End a Run</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="beginner.html">Beginner</a></li>
+      <li><a href="room-46.html">Room 46</a></li>
+      <li><a href="puzzles.html">Puzzles</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+    <p>Blue Prince Guide · Fan site, not affiliated with Dogubomb or Raw Fury.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

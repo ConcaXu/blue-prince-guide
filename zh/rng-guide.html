@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>蓝途王子RNG攻略 — 如何应对糟糕手气</title>
+<meta name="description" content="被蓝途王子的随机性搞崩溃？了解为什么"倒霉局"依然让你进步、如何通过早抽死路间稀释抽卡池、哪些永久升级能降低随机性，以及何时该提前结束当局。">
+<meta name="keywords" content="蓝途王子RNG, 蓝途王子手气差, 蓝途王子随机性, 蓝途王子抽牌技巧, 蓝途王子死路间, 蓝途王子永久升级, 蓝途王子攻略策略">
+
+<link rel="canonical" href="https://concaxu.top/zh/rng-guide.html">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://concaxu.top/zh/rng-guide.html">
+<meta property="og:title" content="蓝途王子RNG攻略 — 拥抱随机性，降低方差">
+<meta property="og:description" content="为什么倒霉局依然让你变强、如何稀释抽卡池、哪些解锁能降低RNG依赖。">
+<meta property="og:site_name" content="蓝途王子攻略">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://concaxu.top/favicon.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+
+<link rel="alternate" hreflang="en" href="https://concaxu.top/rng-guide.html">
+<link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/rng-guide.html">
+<link rel="alternate" hreflang="x-default" href="https://concaxu.top/rng-guide.html">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://concaxu.top/zh/"},{"@type":"ListItem","position":2,"name":"RNG攻略","item":"https://concaxu.top/zh/rng-guide.html"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"蓝途王子的随机性太强了吗？","acceptedAnswer":{"@type":"Answer","text":"RNG决定哪些房间出现在你的抽取选项里，但不决定谜题答案——那些是固定的。手气不好意味着你在那局无法到达特定房间。关键的思维转变是：去追求当局能给你的东西，而不是强行走某条特定路线。"}},
+{"@type":"Question","name":"怎么改善蓝途王子里的抽卡结果？","acceptedAnswer":{"@type":"Answer","text":"在一局的前期主动抽死路房间。你抽的每个死路间都会从该局的抽卡池中移除，这意味着在高层时需要多出口房间推进时，抽到废牌的概率更低。同时，解锁绘图室可以永久向牌池中添加可靠的房间蓝图。"}},
+{"@type":"Question","name":"什么时候应该放弃当局？","acceptedAnswer":{"@type":"Answer","text":"当你真的没有任何值得追求的事情时才结束：没有可进入的未解谜题、没有新房间可探索、资源不足以到达更高层。但大多数玩家结束得太早了。看似报废的局通常还有一个有用的房间可以探索。"}},
+{"@type":"Question","name":"蓝途王子里什么能永久降低随机性？","acceptedAnswer":{"@type":"Answer","text":"解锁绘图室、找到新房间蓝图以及升级关键房间，都能随时间降低随机性。每个新蓝图都让你对抽卡池有更多掌控。物品寄存处可以在局次间储存关键物品，进一步降低每局的随机依赖。"}}
+]}
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+        <li><a href="room-46.html">46号房</a></li>
+        <li><a href="puzzles.html">谜题</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../rng-guide.html">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="rng-guide.html" class="active">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>蓝途王子RNG攻略 — 如何应对糟糕手气</h1>
+<p class="article-meta">更新于2026年5月 · 阅读约10分钟 · 玩家最常见的挫败感根源，彻底解析</p>
+
+<p>RNG是蓝途王子被抱怨最多的方面，也是最容易被误解的。玩家常常因为"房间不配合"而放弃当局——然后带着"白白浪费时间"的感觉退出游戏。本攻略解释RNG究竟控制什么、不控制什么，以及如何让每局都有收获，无论抽到什么牌。</p>
+
+<div class="info-box">
+  <strong>核心思维转变：</strong>RNG控制哪些房间出现在你的抽取选项里。它不控制谜题答案、密码表或剧情——那些都是固定的。"倒霉局"是你无法推进当前主线目标的局。同时，也是你可以去推进其他事情的局。
+</div>
+
+<div class="ad-slot ad-banner"></div>
+
+<h2 id="what-rng-controls">RNG究竟控制什么</h2>
+
+<p>蓝途王子的随机性具体体现在<strong>房间抽卡池</strong>上。当你打开一扇门，系统从可用池中抽出三个房间。这次抽取是随机的。以下内容<em>不是</em>随机的：</p>
+
+<ul>
+  <li>谜题答案 — 每个密码、数字和机关都有固定答案</li>
+  <li>房间内容 — 某个房间出现时，其物品、文件和谜题始终相同</li>
+  <li>永久解锁 — 通过绘图室解锁的内容会永久保留</li>
+  <li>已存储物品 — 存入物品寄存处的东西会保留到下一局</li>
+</ul>
+
+<p>这个区别至关重要。当你说"今天手气太差"，实际上发生的是：你当前计划所需的特定房间没有出现在抽取选项里。你的知识积累、解锁成果和储存物品全都完好无损。下一局从同样的积累进度开始。</p>
+
+<h2 id="mindset">思维方式的转变</h2>
+
+<p>大多数玩家用<strong>单一当前目标</strong>来驱动自己："今天我要拿到地下室钥匙"或"今天我要找到天文台"。当RNG不配合这个目标时，整局就感觉白费了。</p>
+
+<p>有经验的玩家用<strong>多条并行线索</strong>来思考。在游戏的任意时间点，你都有五到十五个已获得部分信息但尚未解开的谜题。一局没给你天文台，却可能给了你台球室、温室和工作室——这些都是你没有完全探索过的谜题房间。跟着当局能给你的东西走，比反复强行走同一条路更高效。</p>
+
+<p>游戏的设计者明确表示，玩家应该<strong>同时追踪多条线索和谜题</strong>，而不是把游戏当成一系列线性目标来逐一完成。能学到新东西的局就是好局，即使没有推进你的主线目标。</p>
+
+<h2 id="thin-pool">如何稀释抽卡池</h2>
+
+<p>改善高层抽牌质量最有效的机械技巧是<strong>在早期主动抽死路房间</strong>。</p>
+
+<p>原理如下：你在一局中抽到的每个房间都会从该局的抽卡池中移除。死路房间（只有一扇朝内的门的房间）在低层抽卡池中非常常见。如果你在第1至3层跳过它们，它们就会留在池子里，在你最需要多出口房间来推进进度的第6至9层继续出现。</p>
+
+<p>通过故意在早期抽死路房间：</p>
+<ul>
+  <li>将它们从本局剩余的抽卡池中移除</li>
+  <li>高层的抽取选项中出现你真正需要的房间的比例更高</li>
+  <li>死路房间通常含有有用资源（宝石、金币、物品）作为补偿</li>
+</ul>
+
+<div class="info-box">
+  <strong>反直觉但确实有效：</strong>在早期主动抽"差"房间是游戏中杠杆效果最高的RNG策略之一。很多玩家逃避死路间，这恰恰和正确做法相反。
+</div>
+
+<h2 id="permanent-upgrades">降低随机性的永久升级</h2>
+
+<p>随着局次积累，某些永久解锁能直接降低RNG对你结果的影响：</p>
+
+<h3 id="drafting-studio">绘图室蓝图</h3>
+<p>你找到并添加到绘图室的每个新房间蓝图，都用你知道内容的房间扩充了你的牌池。知道内容的房间越多，让你计划泡汤的意外抽取就越少。优先为当前主线目标所需的房间寻找蓝图。</p>
+
+<h3 id="coat-check">物品寄存处 — 跨局储存物品</h3>
+<p>物品寄存处可以在局次间储存物品。如果你在某局找到了关键物品（比如地下室钥匙、特定工具或合成武器），可以存入寄存处，下一局取出。这实际上消除了"今天能不能找到我需要的物品"这一随机因素。</p>
+
+<h3 id="bedroom-unlocks">卧室房间 — 步数恢复</h3>
+<p>在卧室睡觉可以恢复步数。步数越多，每局能探索的庄园区域越多，也就意味着每局有更多次抽卡机会，遇到目标房间的可能性更高。早期解锁卧室蓝图，在之后的每一局都会获益。</p>
+
+<h3 id="workshop">工作室解锁</h3>
+<p>工作室可以将物品合成为更强力的工具。一旦你知道配方，工作室出现在某局时就能让你绕过一些原本需要特定稀有房间才能克服的障碍。它是多个推进瓶颈的RNG旁路手段。</p>
+
+<div class="ad-slot"></div>
+
+<h2 id="multi-thread">同时推进多条谜题线索</h2>
+
+<p>让每局都不"白费"的实际做法，是维护一份活跃谜题线索清单。每次游戏结束后，看看你的笔记，找出：</p>
+
+<ol>
+  <li><strong>现在就有足够信息解开的谜题</strong> — 如果你有密码表和编码信息，那就去解</li>
+  <li><strong>差一块信息就能解开的谜题</strong> — 这些是下一局的主要目标</li>
+  <li><strong>你去过但还没理解机制的房间</strong> — 再去仔细观察</li>
+  <li><strong>你听说过但从没见过的房间</strong> — 这些是探索目标</li>
+</ol>
+
+<p>有四条活跃线索在手，任何给了你哪怕一个相关房间的局都是有收获的局。当你一局拿到三四个相关房间时，那就是极好的一局——而且随着你的牌池充实，这种情况比你预期的更常见。</p>
+
+<h2 id="when-to-end">何时提前结束当局</h2>
+
+<p>提前结束（步数耗尽前主动睡觉）能为下一局保留步数投入。在以下情况下值得提前结束：</p>
+
+<ul>
+  <li>当前可到达的范围内没有未解房间</li>
+  <li>关键物品已存入寄存处，没有其他值得追求的目标</li>
+  <li>剩余步数不够到达目标房间所在的层数</li>
+</ul>
+
+<p>但是，<strong>大多数玩家结束得太早</strong>。在睡觉前先确认：</p>
+<ul>
+  <li>当前布局中有没有你没有完全探索的房间？</li>
+  <li>有没有你在第3层跳过、可能含有有用物品的死路间？</li>
+  <li>有没有可以到达的商店房间，出售值得储存的东西？</li>
+</ul>
+
+<h2 id="faq">常见问题</h2>
+
+<div class="info-box">
+  <strong>我玩了20局还没见过我需要的那个房间，是不是哪里出了问题？</strong><br>
+  有些稀有房间的抽取率确实很低——尤其是"罕见"和"稀有"等级的房间。在菜单中查看房间图鉴，确认你目标房间的稀有度。即使发挥正常，稀有房间每5至10局才可能出现一次。这是正常的。解决方案是扩展你同时在推进的事情。
+</div>
+
+<div class="info-box">
+  <strong>重开一局会重新随机化吗？</strong><br>
+  开始新的一天（睡觉后重新开始）会为抽卡池生成新的随机种子。在同一局内没有"重投"机制——牌池在当天开始时就已确定。有些玩家试图通过反复开关门来"钓鱼"更好的选择，但第一次交互时选项就已经固定了。
+</div>
+
+<div class="info-box">
+  <strong>有没有办法保证某个特定房间出现？</strong><br>
+  没有保证的方式，但可以影响概率。高稀有度房间在高层（第7至9层）出现频率更高。通过早抽死路间来稀释牌池可以提高特定房间出现的相对概率。某些永久升级也可以提高特定房间的权重。
+</div>
+
+<h2 id="related">相关攻略</h2>
+
+<div class="card-grid">
+  <article class="card">
+    <span class="card-tag">新手入门</span>
+    <h3>新手指南</h3>
+    <p>抽牌系统、稀有度层级和每日资源详解。</p>
+    <a href="beginner.html" class="card-link">从这里开始</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">策略</span>
+    <h3>如何记笔记</h3>
+    <p>跨局追踪线索，让倒霉局也能积累进度。</p>
+    <a href="note-taking.html" class="card-link">阅读攻略</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">策略</span>
+    <h3>资源经济</h3>
+    <p>宝石、钥匙、步数——如何在一局中合理分配资源。</p>
+    <a href="resource-economy.html" class="card-link">阅读攻略</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">终局</span>
+    <h3>46号房</h3>
+    <p>第一个结局的完整路径。</p>
+    <a href="room-46.html" class="card-link">查看攻略</a>
+  </article>
+</div>
+
+</main>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">本页目录</div>
+    <ul>
+      <li><a href="#what-rng-controls">RNG究竟控制什么</a></li>
+      <li><a href="#mindset">思维方式转变</a></li>
+      <li><a href="#thin-pool">稀释抽卡池</a></li>
+      <li><a href="#permanent-upgrades">永久升级</a></li>
+      <li><a href="#drafting-studio">绘图室蓝图</a></li>
+      <li><a href="#coat-check">物品寄存处</a></li>
+      <li><a href="#multi-thread">多条谜题线索</a></li>
+      <li><a href="#when-to-end">何时结束当局</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="beginner.html">新手指南</a></li>
+      <li><a href="room-46.html">46号房</a></li>
+      <li><a href="puzzles.html">谜题</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="privacy.html">隐私政策</a></li>
+      <li><a href="terms.html">使用条款</a></li>
+    </ul>
+    <p>蓝途王子攻略 · 粉丝站点，与Dogubomb及Raw Fury无关联。</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
