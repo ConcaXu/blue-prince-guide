@@ -3,108 +3,260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY9B9T99QT"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PY9B9T99QT');</script>
-<title>Blue Prince 前厅 — 解锁方法与内部详解</title>
-<meta name="description" content="前厅在首次到达 46 号房间后解锁。本文讲清楚如何抽到、内部的万能钥匙物品，以及 46 号房后的策略 build。">
-<meta name="keywords" content="Blue Prince 前厅, Blue Prince 万能钥匙, Blue Prince 46 号房后, Blue Prince 前厅解锁, Blue Prince 前厅位置, Blue Prince 前厅策略, Blue Prince 二周目, Blue Prince 终局">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY9B9T99QT');
+</script>
+
+<title>Blue Prince 前厅 — 四扇门、基础钥匙与石柱机制</title>
+<meta name="description" content="Blue Prince 前厅(Antechamber)固定在 Rank 9 中心,四扇门默认全锁。在 Great Hall、Secret Garden 或 Greenhouse 拉控杆解开一扇,然后从石柱拿基础钥匙。">
+<meta name="keywords" content="Blue Prince 前厅,Antechamber 四门,基础钥匙,津贴令牌,控杆室,Great Hall 控杆,Secret Garden 控杆,Rank 9,北门 Room 46">
+
 <link rel="canonical" href="https://concaxu.top/zh/antechamber.html">
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://concaxu.top/zh/antechamber.html">
-<meta property="og:title" content="Blue Prince 前厅 — 解锁方法与内部详解">
-<meta property="og:description" content="前厅：解锁条件、万能钥匙物品、46 号房后 build。">
+<meta property="og:title" content="Blue Prince 前厅 — 完整机制攻略">
+<meta property="og:description" content="Rank 9 枢纽。四扇门、基础钥匙石柱、通往 46 号房的路。">
 <meta property="og:site_name" content="Blue Prince 攻略">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://concaxu.top/favicon.svg">
 <meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/style.css">
+
 <link rel="alternate" hreflang="en" href="https://concaxu.top/antechamber.html">
 <link rel="alternate" hreflang="zh" href="https://concaxu.top/zh/antechamber.html">
 <link rel="alternate" hreflang="x-default" href="https://concaxu.top/antechamber.html">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://concaxu.top/zh/"},{"@type":"ListItem","position":2,"name":"前厅","item":"https://concaxu.top/zh/antechamber.html"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Blue Prince 前厅攻略","datePublished":"2026-05-14","dateModified":"2026-05-14","inLanguage":"zh-CN","author":{"@type":"Organization","name":"Blue Prince 攻略"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-CN","mainEntity":[{"@type":"Question","name":"前厅怎么解锁？","acceptedAnswer":{"@type":"Answer","text":"首次到达 46 号房间后自动解锁。下一局起前厅以黑色边框出现在抽卡池。"}},{"@type":"Question","name":"前厅里有什么？","acceptedAnswer":{"@type":"Answer","text":"一个箱子，里面是万能钥匙 —— 永久背包物品，每天可免费开一次任意钢门。"}},{"@type":"Question","name":"前厅好抽吗？","acceptedAnswer":{"@type":"Answer","text":"约 5 抽 1 次。解锁后只要出现就抽，万能钥匙是最强的永久升级之一。"}},{"@type":"Question","name":"万能钥匙能跨日叠加吗？","acceptedAnswer":{"@type":"Answer","text":"不能。每天只开 1 道钢门。用在最高价值目标上 —— 真结局局通常用在金库。"}}]}</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://concaxu.top/zh/"},{"@type":"ListItem","position":2,"name":"前厅","item":"https://concaxu.top/zh/antechamber.html"}]}
+</script>
+
 <!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6096177367168831" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="site-header"><div class="nav-wrap"><a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a><button class="menu-toggle" aria-label="切换菜单">☰</button><div class="nav-right"><ul class="nav-links"><li><a href="index.html">首页</a></li><li><a href="beginner.html">新手指南</a></li><li><a href="room-46.html">46 号房间</a></li><li><a href="puzzles.html">谜题攻略</a></li></ul><div class="lang-switch"><a href="../antechamber.html">EN</a><span class="lang-sep">|</span><a href="antechamber.html" class="active">中文</a></div></div></div></header>
-<div class="container"><div class="article-layout"><main class="article-main">
-<h1>Blue Prince 前厅攻略</h1>
-<p class="article-meta">2026 年 5 月 14 日更新 · 阅读约 7 分钟 · 46 号房后内容</p>
-<div class="warning-box"><strong>剧透：</strong>本文涉及 46 号房间后的内容，未到达 46 号房间一次的玩家请关闭。</div>
-<p>前厅（Antechamber）是传说级房间，仅在通过 46 号房间一次后出现。内部一个箱子装着 <strong>万能钥匙</strong> —— Blue Prince 最强永久物品之一。如何抽到它、如何使用，是真结局策略的基石。</p>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">Blue<span>Prince</span> 攻略</a>
+    <button class="menu-toggle" aria-label="切换菜单">☰</button>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="beginner.html">新手指南</a></li>
+        <li><a href="room-46.html">46 号房间</a></li>
+        <li><a href="puzzles.html">谜题</a></li>
+      </ul>
+      <div class="lang-switch">
+        <a href="../antechamber.html">EN</a>
+        <span class="lang-sep">|</span>
+        <a href="antechamber.html" class="active">中文</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+<div class="article-layout">
+
+<main class="article-main">
+
+<h1>前厅 — 四扇门、石柱与基础钥匙</h1>
+<p class="article-meta">2026 年 5 月 25 日更新 · 8 分钟阅读 · Rank 9 中心枢纽</p>
+
+<p><strong>前厅(Antechamber)</strong>是庄园本体与 46 号房之间的关口。固定在 <strong>Rank 9 中心</strong> — 5×9 庄园网格顶部 — 不需抽取。四扇门(北/南/东/西)默认全锁,每扇都由一间另外的房间里的控杆开。本页覆盖四扇门、三间控杆室、升起石柱机制,以及前厅在 Room 46 链中的位置。</p>
+
+<div class="info-box">
+  <strong>速查：</strong>前厅 = Rank 9 中心,固定。南/东/西门由 <strong>Great Hall</strong>、<strong>Secret Garden</strong>、<strong>Greenhouse</strong>(坏)的控杆开。北门由地下室 <strong>Inner Sanctum</strong> 控杆开。首次进入时,石柱升起,内含<strong>基础钥匙</strong>、<strong>津贴令牌</strong>,以及注解:<em>"To continue up, one must go down."</em>
+</div>
+
 <div class="ad-slot ad-banner"></div>
 
-<h2 id="unlock">前厅解锁方式</h2>
-<ol class="step-list">
-  <li>在任意存档首次到达 <a href="room-46.html">46 号房间</a>。</li>
-  <li>结局演出播放，当天结束或选择继续。</li>
-  <li>下一局起，前厅出现在抽卡池。卡片有独特的 <em>黑色边框</em>（其他房间都没有）。</li>
-  <li>无需任何额外操作 —— 自动加入卡池，没有任务，没有配方。</li>
-</ol>
+<h2 id="location">网格位置</h2>
 
-<h2 id="drafting">如何抽到前厅</h2>
-<p>解锁后约 5 抽出现 1 次。注意事项：</p>
+<p>前厅是庄园仅有的两个固定房之一。另一个是玄关(Rank 1 中心)。它们界定每局南北两端：</p>
+
 <ul>
-  <li><strong>放置成本：</strong>无。前厅免费放。</li>
-  <li><strong>门数：</strong>2 —— 等同走廊替代品。</li>
-  <li><strong>视觉提示：</strong>黑色边框 + 卡片角落小钥匙图标。快速翻牌时容易看漏。</li>
-  <li><strong>出现必抽。</strong>就算已有万能钥匙，前厅本身后续进入也掉宝石。</li>
+  <li><strong>玄关</strong> — Rank 1,第 3 列(中)。每天起点。</li>
+  <li><strong>前厅</strong> — Rank 9,第 3 列(中)。需要抵达的目标。</li>
+  <li><strong>46 号房</strong> — Rank 10。前厅北门后唯一的房。</li>
 </ul>
-<div class="tip-box"><strong>累计抽取：</strong>若多日抽到前厅，箱子只在第一次出现。后续访问给 3–5 宝石 + 1 硬币。</div>
 
-<h2 id="master-key">万能钥匙</h2>
-<p>万能钥匙是永久背包物品。关键属性：</p>
-<table class="guide-table">
-  <thead><tr><th>属性</th><th>说明</th></tr></thead>
+<p>中间是 5×9 = 45 间的抽取网格。前厅不抽取 — 永远在顶部等你。</p>
+
+<h2 id="doors">四扇门</h2>
+
+<table>
+  <thead>
+    <tr><th>门</th><th>控杆位置</th><th>状态</th></tr>
+  </thead>
   <tbody>
-    <tr><td>类型</td><td>永久（跨日保留）</td></tr>
-    <tr><td>每日次数</td><td>1 —— 免费开任意钢门一次</td></tr>
-    <tr><td>能叠加吗？</td><td>不能 —— 多余的会覆盖（背包同时只能 1 把）</td></tr>
-    <tr><td>睡觉会丢吗？</td><td>不会 —— 跨日保留</td></tr>
-    <tr><td>过 46 号房间会丢吗？</td><td>不会 —— 永久保留</td></tr>
-    <tr><td>最佳用法</td><td>真结局局用在金库；省下 1 把钥匙挪作他用</td></tr>
+    <tr><td>南(S)</td><td>Great Hall / Secret Garden / Greenhouse 之一</td><td>可用(Greenhouse 除外 — 坏)</td></tr>
+    <tr><td>东(E)</td><td>Great Hall / Secret Garden / Greenhouse 之一</td><td>可用(Greenhouse 除外 — 坏)</td></tr>
+    <tr><td>西(W)</td><td>Great Hall / Secret Garden / Greenhouse 之一</td><td>可用(Greenhouse 除外 — 坏)</td></tr>
+    <tr><td>北(N)</td><td>Inner Sanctum(地下室)</td><td>开 46 号房门的控杆</td></tr>
   </tbody>
 </table>
 
-<h2 id="strategy">前厅策略 Build</h2>
-<h3>Build A — 真结局速通</h3>
-<p>万能钥匙打掉"金库需要 1 钥匙"瓶颈。真结局局可把这把钥匙留给矿洞第 3 层箱子（含 +5 宝石加成）。这能把真结局从 7 天压到 5 天。</p>
+<p>哪个控杆开哪扇门(S/E/W)的对应在每存档固定 — 一旦发现 Great Hall 开南门,这映射对该存档余下时间都成立。</p>
 
-<h3>Build B — 全谜题日</h3>
-<p>用万能钥匙开锁匠房间内的隐藏暗格（钢门）。一次掉 4 钥匙。配合锁匠访问，单日可囤 6+ 钥匙 —— 足以尝试所有需钥匙的谜题。</p>
+<h2 id="lever-rooms">三间控杆室</h2>
 
-<h3>Build C — 地窖准备</h3>
-<p>地窖（矿洞第 4 层）的门槛是宝石不是钥匙，万能钥匙这里直接没用。但准备地窖的局，可以把万能钥匙留给金库地契条件，避免消耗钥匙库存。</p>
+<h3>Great Hall</h3>
+<p>最容易抵达的控杆。普通房,抽取概率高。控杆在大厅深处,中央楼梯后。拉一次永久解开它对应的前厅门。</p>
 
+<h3>Secret Garden</h3>
+<p>需要 <strong>Secret Garden Key</strong>,随机生成。最佳来源:台球室飞镖盘奖(可能掉特殊钥匙之一)、Music Room、Locksmith。控杆在花园深处,喷泉附近。</p>
+
+<h3>Greenhouse(坏)</h3>
+<p>Greenhouse 里<em>有</em>控杆,但不工作。这是设计的,房内注解会提到。别浪费 run 拉它 — 找其他控杆室。</p>
+
+<h2 id="pillar">首次进入时升起的石柱</h2>
+
+<p>首次走入前厅,石柱从地板升起。顶部三件物品：</p>
+
+<ol class="step-list">
+  <li><strong>基础钥匙(Basement Key)。</strong>开两个地下室入口:Foundation 电梯(若抽到)和抽干喷泉后的井底门。开过的门跨 run 永久保留。</li>
+  <li><strong>津贴令牌。</strong>永久提升每日 Coin 上限。存档级升级。</li>
+  <li><strong>注解：</strong><em>"To continue up, one must go down."</em> — 提示下一步是地下室。</li>
+</ol>
+
+<!-- AD: Mid -->
 <div class="ad-slot"></div>
 
-<h2 id="lore">设定笔记</h2>
-<p>前厅墙上挂着 M. Holly 孙子各年龄的相片。其中几张显示孙子在我们探索的同一个霍利山 —— 证实玩家就是孙子，整座庄园是给他的遗产谜题。这与 <a href="endings.html#forgotten">被遗忘之翼结局</a> 呼应。</p>
+<div class="tip-box">
+  <strong>基础钥匙每晚重置。</strong>用之前不要睡。睡了,钥匙回到石柱 — 下一 run 要再次解控杆室进前厅再领。它打开过的地下室门<em>跨 run 永久保留</em>。
+</div>
 
-<h2 id="faq">前厅常见问题</h2>
-<div class="info-box"><strong>怎么解锁？</strong>到达 46 号房间一次。下一局起前厅以黑色边框出现在抽卡池。</div>
-<div class="info-box"><strong>里面有什么？</strong>一个箱子装万能钥匙。后续访问改为 3–5 宝石 + 1 硬币。</div>
-<div class="info-box"><strong>多稀有？</strong>约 5 抽 1 次。出现必抽。</div>
-<div class="info-box"><strong>万能钥匙能叠加吗？</strong>不能。同时只能 1 把。每天开 1 道钢门，过夜刷新。</div>
-<div class="info-box"><strong>会丢吗？</strong>不会。跨日跨局永久保留。</div>
+<h2 id="north-lever">北门控杆在 Inner Sanctum</h2>
+
+<p>前厅四扇门中三扇只给你<em>进</em>的方式。只有北门通 46 号房 — 它的控杆不在庄园里,而在地下室深处的 <strong>Inner Sanctum</strong>。</p>
+
+<p>完整序列：</p>
+
+<ol class="step-list">
+  <li>拉 S/E/W 控杆(Great Hall、Secret Garden 或 Greenhouse 若没坏)。</li>
+  <li>进前厅,从石柱拿基础钥匙。</li>
+  <li>经 Foundation 电梯 或 已抽干的喷泉井下地下室(用基础钥匙开门)。</li>
+  <li>穿过地下室到齿轮谜题室。</li>
+  <li>解齿轮谜题抵达 Inner Sanctum。</li>
+  <li>拉北门控杆。</li>
+  <li>走回前厅。北门已开,进去就是 46 号房。</li>
+</ol>
+
+<p>地下室与齿轮谜题详细攻略:见<a href="room-46.html">46 号房间走法</a>。</p>
+
+<h2 id="after-46">通关 46 号房后,前厅还有什么</h2>
+
+<p>首次抵达 46 号房会触发字幕 — 但前厅角色没结束。后续访问解锁：</p>
+
+<ul>
+  <li><strong>Throne Room 通路</strong>(经后期专属钥匙和谜题)。</li>
+  <li><strong>Alternate Room 46 路线</strong>经 Atelier 和 Tunnel。</li>
+  <li><strong>圣殿本体</strong> — 8 个 Mora Jai 拼图盒(见 <a href="puzzle-mora-jai.html">Mora Jai 攻略</a>)。</li>
+</ul>
+
+<p>整个字幕后内容,前厅都是你的枢纽。</p>
+
+<h2 id="faq">前厅 FAQ</h2>
+
+<div class="info-box">
+  <strong>能跳过前厅直接到 46 号房吗？</strong>
+  不能。46 号房只有一扇门,就是前厅北门。
+</div>
+
+<div class="info-box">
+  <strong>必须四扇门全开吗？</strong>
+  不必。任一扇 S/E/W 门就够进前厅。北门是唯一通向 46 号房的门。其他门是替代<em>入口</em>。
+</div>
+
+<div class="info-box">
+  <strong>Greenhouse 控杆真的坏？</strong>
+  对。Greenhouse 内的注解承认这点。设计的诱饵。
+</div>
+
+<div class="info-box">
+  <strong>津贴令牌可重复用吗？</strong>
+  不可,但效果永久。一旦从石柱拿过,你的每日 Coin 上限永久上升。
+</div>
 
 <h2 id="related">相关攻略</h2>
+
 <div class="card-grid">
-  <article class="card"><span class="card-tag">主线</span><h3>如何到达 46 号房间</h3><p>前厅解锁的前置条件。</p><a href="room-46.html" class="card-link">读路线</a></article>
-  <article class="card"><span class="card-tag">终局</span><h3>全结局攻略</h3><p>万能钥匙能显著缩短真结局局的天数。</p><a href="endings.html" class="card-link">看结局</a></article>
-  <article class="card"><span class="card-tag">参考</span><h3>物品列表</h3><p>所有持久物品。</p><a href="items-list.html" class="card-link">物品索引</a></article>
-  <article class="card"><span class="card-tag">参考</span><h3>全房间列表</h3><p>前厅在房间分级里的位置。</p><a href="all-rooms.html" class="card-link">房间数据库</a></article>
+  <article class="card">
+    <span class="card-tag">终局</span>
+    <h3>46 号房间</h3>
+    <p>从控杆到北门的完整链。</p>
+    <a href="room-46.html" class="card-link">完整攻略</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">谜题</span>
+    <h3>泵房 — 抽干喷泉</h3>
+    <p>开井下地下室的方式。</p>
+    <a href="puzzle-pump-room.html" class="card-link">查看解法</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">谜题</span>
+    <h3>Mora Jai — 圣殿八扇门</h3>
+    <p>46 号房后圣殿里等着的内容。</p>
+    <a href="puzzle-mora-jai.html" class="card-link">查看解法</a>
+  </article>
+  <article class="card">
+    <span class="card-tag">终局</span>
+    <h3>全结局</h3>
+    <p>46 号房只是几层结局中的第一个。</p>
+    <a href="endings.html" class="card-link">查看结局</a>
+  </article>
 </div>
+
 </main>
-<aside class="article-sidebar"><div class="toc"><div class="toc-title">本页目录</div><ul><li><a href="#unlock">解锁方式</a></li><li><a href="#drafting">如何抽到</a></li><li><a href="#master-key">万能钥匙</a></li><li><a href="#strategy">策略 Build</a></li><li><a href="#lore">设定笔记</a></li><li><a href="#faq">常见问题</a></li><li><a href="#related">相关攻略</a></li></ul></div><div class="ad-slot ad-sidebar"></div></aside>
-</div></div>
-<footer class="site-footer"><div class="container"><ul class="footer-links"><li><a href="index.html">首页</a></li><li><a href="beginner.html">新手</a></li><li><a href="room-46.html">46 号房间</a></li><li><a href="puzzles.html">谜题</a></li><li><a href="about.html">关于</a></li><li><a href="privacy.html">隐私政策</a></li><li><a href="terms.html">服务条款</a></li></ul><p>Blue Prince 攻略 · 玩家自制站点，与 Dogubomb 及 Raw Fury 无关联。</p></div></footer>
+
+<aside class="article-sidebar">
+  <div class="toc">
+    <div class="toc-title">本页目录</div>
+    <ul>
+      <li><a href="#location">网格位置</a></li>
+      <li><a href="#doors">四扇门</a></li>
+      <li><a href="#lever-rooms">三间控杆室</a></li>
+      <li><a href="#pillar">石柱</a></li>
+      <li><a href="#north-lever">北门控杆</a></li>
+      <li><a href="#after-46">字幕后内容</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#related">相关攻略</a></li>
+    </ul>
+  </div>
+
+  <div class="ad-slot ad-sidebar"></div>
+</aside>
+
+</div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="footer-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="beginner.html">新手</a></li>
+      <li><a href="room-46.html">46 号房间</a></li>
+      <li><a href="puzzles.html">谜题</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="privacy.html">隐私</a></li>
+      <li><a href="terms.html">条款</a></li>
+    </ul>
+    <p>Blue Prince 攻略 · 粉丝站,与 Dogubomb、Raw Fury 无官方关联。</p>
+  </div>
+</footer>
+
 <script src="../js/main.js"></script>
 </body>
 </html>
